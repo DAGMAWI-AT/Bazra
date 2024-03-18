@@ -5,7 +5,7 @@ const UploadCounters = () => {
   const [icon, setIcon] = useState("");
   const [title, setTitle] = useState("");
   const [number, setNumber] = useState("");
-
+// eslint-disable-next-line
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     setSelectedFile(file);

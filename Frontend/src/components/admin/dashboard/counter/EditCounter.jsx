@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const EditCounter = () => {
+  // eslint-disable-next-line
   const navigate = useNavigate();
   const { id } = useParams();
-
+// eslint-disable-next-line
   const [counterData, setCounterData] = useState({});
   const [editedData, setEditedData] = useState({
     icon: '',

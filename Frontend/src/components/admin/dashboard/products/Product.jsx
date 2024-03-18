@@ -7,6 +7,7 @@ const Product = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  // eslint-disable-next-line
   const [selectedId, setSelectedId] = useState(null);
 
   const productsPerPage = 3;

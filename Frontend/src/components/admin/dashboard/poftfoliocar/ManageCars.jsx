@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Table } from "flowbite-react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 function ManageCars() {
   const [cars, setCars] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  // eslint-disable-next-line
   const [filterCategory, setFilterCategory] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [carsPerPage] = useState(3);

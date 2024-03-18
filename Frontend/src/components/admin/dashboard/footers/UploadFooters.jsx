@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { footer, Map } from "../../../data/Data";
+import { footer } from "../../../data/Data";
 
 function UploadFooters() {
+  // eslint-disable-next-line
     const [email, setEmail] = useState({
         text: footer[2].text[1].list, // Access the first value from the "text" array
         to: footer[2].to,

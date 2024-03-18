@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import MessagesPage from "./MessagesPage";
+// import MessagesPage from "./MessagesPage";
 
   
 
@@ -41,7 +41,7 @@ const Contacts = () => {
         "Long message 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium...",
     },
   ];
-
+// eslint-disable-next-line
   const [contactData, setContactData] = useState(initialMessages);
   const [currentPage, setCurrentPage] = useState(1);
   const contactPerPage = 3;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 function UploadCarsGallery() {
+  // eslint-disable-next-line
   const [uploadFile, setUploadFile] = useState(null);
 
   const handleUpload = (event) => {

@@ -8,6 +8,7 @@ const Ourservice = () => {
     { id: 2, name: 'Service 2', description: 'Description for Service 2', video: 'video2.mp4' },
     // Add more services as needed
   ]);
+  // eslint-disable-next-line
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedService, setSelectedService] = useState(null); // Track the selected service for the modal
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
