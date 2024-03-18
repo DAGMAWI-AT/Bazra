@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./hero.css";
 import { Link } from "react-router-dom";
 import { scroller } from "react-scroll";
-import Reveal from "../../reveal";
+// import Reveal from "../../reveal";
 import { home } from "../../data/Data";
 import Typewriter from "typewriter-effect";
 const Hero = () => {
@@ -35,15 +35,15 @@ const Hero = () => {
     setCurrentSlide(index);
   };
 
-  const goToPrevSlide = () => {
-    setPrevSlide(currentSlide);
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + home.length) % home.length);
-  };
+  // const goToPrevSlide = () => {
+  //   setPrevSlide(currentSlide);
+  //   setCurrentSlide((prevSlide) => (prevSlide - 1 + home.length) % home.length);
+  // };
 
-  const goToNextSlide = () => {
-    setPrevSlide(currentSlide);
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % home.length);
-  };
+  // const goToNextSlide = () => {
+  //   setPrevSlide(currentSlide);
+  //   setCurrentSlide((prevSlide) => (prevSlide + 1) % home.length);
+  // };
 
   return (
     <div className="hero-section">
@@ -75,7 +75,9 @@ const Hero = () => {
         <br />
         <div className="readMore">
           <Link to="/services" className="primaryBtn" data-aos="fade-up-right">
-            <a className="Read">Read More</a>
+            <a href="/services" className="Read">
+              Read More
+            </a>
           </Link>
         </div>
       </div>

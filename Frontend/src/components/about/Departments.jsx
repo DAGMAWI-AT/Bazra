@@ -59,7 +59,7 @@ const Dmt = () => {
         <section key={department.id} className={`department-info ${activeDepartment === department.id ? 'active' : ''}`}>
           <h2>{department.title}</h2>
           <div className="d-content">
-            <img src={department.image} alt={`${department.title} Image`} />
+          <img src={department.image} alt={department.title} />
             <div className="d-left">
               <div className="d-disc">
                 <p>{department.description}</p>

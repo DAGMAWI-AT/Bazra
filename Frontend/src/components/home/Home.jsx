@@ -3,7 +3,7 @@ import Hero from "./hero/Hero"
 import Counter from './counter/Counter'
 import Portfolio from '../portfolioBC/Portfolio'
 import Testimonials from './testimonials/Testimonials'
-import Who_we_are from "./who_we_are/Who_we_are"
+import WhoWeAre from "./who_we_are/Who_we_are";
 import { overview } from '../data/Data'
 import ServicesSE from '../services/ServicesSE'
 import ImageSlider from '../ImageSlider/ImageSlider'
@@ -48,7 +48,7 @@ const Home = () => {
   return (
   <div>
    <Hero />
-   <Who_we_are />
+   <WhoWeAre />
    {renderCompanyOverview()} 
    <Portfolio/>  
    <ServicesSE/>
