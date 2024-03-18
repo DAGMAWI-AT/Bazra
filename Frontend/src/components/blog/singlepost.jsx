@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 import React ,{useEffect, useState}from "react"
 import "./singlepost.css";
 import Posts from "./posts";
-import Headerb from "./b-header";
 import img from "../images/blog.jpg"
-import Back from "../common/Back"
-import { useParams, useHistory,useNavigate} from 'react-router-dom';
+// import Back from "../common/Back"
+import { useParams,useNavigate} from 'react-router-dom';
 import { postData } from '../data/Data';
 import BackBlog from "./b-header"
 
@@ -13,6 +12,7 @@ import BackBlog from "./b-header"
 export default function Singlepost() {
   const { id } = useParams();
   const post = postData.find((p) => p.id === parseInt(id));
+  // eslint-disable-next-line
   const history= useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [searchedPosts, setSearchedPosts] = useState([]);

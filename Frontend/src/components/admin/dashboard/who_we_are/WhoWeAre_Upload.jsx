@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button, Label, TextInput, Textarea, FileInput } from "flowbite-react";
+import { Button, Label, Textarea } from "flowbite-react";
 
 const WhoWeAre_Upload = () => {
   const [videoData, setVideoData] = useState({

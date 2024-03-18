@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import './blog.css'
-import Headerb from './b-header'
 import Post from './posts'
-import Sidebar from './sidebar'
 import img from "../images/max_vygoda-up.jpg"
 import BackBlog from "./b-header"
 const Blog = () => {

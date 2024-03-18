@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Button, Label, TextInput, Textarea } from 'flowbite-react';
+import { Button, Label, Textarea } from 'flowbite-react';
 
 const WhoWeAreEdit = () => {
   const { id } = useParams();

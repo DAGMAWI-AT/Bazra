@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
 // components/SideBar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { Sidebar } from "flowbite-react";
 import { BiBuoy } from "react-icons/bi";
+
 import {
   HiArrowSmRight,
   HiChartPie,

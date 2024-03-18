@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Table, TextInput } from "flowbite-react";
+import { Table } from "flowbite-react";
 import Modal from "react-modal";
 
 const WhoWeAre = () => {

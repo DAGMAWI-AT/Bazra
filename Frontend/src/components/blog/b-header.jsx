@@ -9,7 +9,7 @@ const BackBlog = ({ name, title, cover, desc }) => {
     backgroundColor: "#fff",
     zIndex: 1,
   };
-
+// eslint-disable-next-line
   const videoStyle = {
     width: "100%",
     height: "100%",
