@@ -55,6 +55,7 @@ import AboutDepartment from "../admin/dashboard/aboutsDepartment/AboutDepartment
 import UploadAboutDepartment from "../admin/dashboard/aboutsDepartment/UploadAboutDepartment";
 import EditAboutDepartment from "../admin/dashboard/aboutsDepartment/EditAboutDepartment";
 import EditService from "../admin/dashboard/service/EditService";
+import Singlepost from "../blog/singlepost";
 
 
 const router = createBrowserRouter([
@@ -79,9 +80,18 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
+        path: "/blog/singlepost/",
+        element: <Singlepost />,
+      },
+      {
+        path: "/blog/singlepost/:id",
+        element: <Singlepost />,
+      },
+      {
         path: "/Contact",
         element: <Contact />,
       },
+
     ],
   },
   {

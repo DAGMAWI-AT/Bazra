@@ -7,7 +7,9 @@ const Modal = ({ item, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <span className="close-btn" onClick={onClose}>
+        <span className="
+       close-btn bg-blue-500 text-white px-2 py-1 mt-4 float-right"
+ onClick={onClose}>
           &times;
         </span>
         {item && (
