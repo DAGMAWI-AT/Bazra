@@ -1,5 +1,3 @@
-// Hero.js
-
 import React, { useState, useEffect } from "react";
 import "./hero.css";
 import { Link } from "react-router-dom";
@@ -7,7 +5,6 @@ import { scroller } from "react-scroll";
 import Reveal from "../../reveal";
 import { home } from "../../data/Data";
 import Typewriter from "typewriter-effect";
-
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [door, setDoor] = useState(false);
