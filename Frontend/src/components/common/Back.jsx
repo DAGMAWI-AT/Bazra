@@ -10,6 +10,7 @@ const Back = ({ name, title, cover, desc }) => {
     zIndex:1,
   };
 
+  // eslint-disable-next-line no-unused-vars
   const videoStyle = {
     width: "100%",
     height: "100%",

@@ -1,4 +1,5 @@
 import * as React from "react";
+// eslint-disable-next-line no-unused-vars
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "../../App";
 import Home from "../home/Home";
@@ -150,6 +151,7 @@ const router = createBrowserRouter([
 
       {
         path: "/admin/dashboard/uploawhoweare",
+        // eslint-disable-next-line react/jsx-pascal-case
         element: <WhoWeAre_Upload />,
       },
       {

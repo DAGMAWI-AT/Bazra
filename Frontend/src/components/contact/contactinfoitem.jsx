@@ -1,7 +1,7 @@
 import React from 'react'
 import "./contacts.css"
 import { MdPlace} from 'react-icons/md'
-import styled from 'styled-components';
+// import styled from 'styled-components';
 // import PText from './PText';
 
 

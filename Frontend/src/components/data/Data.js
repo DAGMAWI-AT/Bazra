@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import {
   CropRotate,
   PieChart,
@@ -380,7 +382,7 @@ export const contact = [
     icon: (
       <i>
         <AddLocationAltOutlined />
-        <a
+        <a title="map"
           href="https://maps.google.com?q=Friendship+Business+Center,+Airport+Rd,+Addis"
           target="_blank"
           rel="noopener noreferrer"
@@ -403,7 +405,7 @@ export const contact = [
     icon: (
       <a>
         <MdLocalPhone />
-        <a
+        <a title="phone"
           href="https://wa.me/251985187059?"
           target="_blank"
           rel="noopener noreferrer"
@@ -426,7 +428,7 @@ export const contact = [
     icon: (
       <a>
         <MdEmail />
-        <a
+        <a title="mail"
           href="mailto:amaredagmawi1@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
@@ -436,7 +438,7 @@ export const contact = [
     text: (
       <a>
         {" "}
-        <a href="mailto:amaredagmawi1@gmail.com/" target="_blank">
+        <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
           {" "}
           amaredagmawi1@gmail.com
         </a>{" "}
@@ -623,16 +625,19 @@ export const footer = [
       },
     ],
   },
+  
   {
+    
     title: "Social",
     text: [
       {
         list: (
+
           <a>
             <i>
               <EmailOutlined />
             </i>{" "}
-            <a href="mailto:amaredagmawi1@gmail.com/" target="_blank">
+            <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
               {" "}
               Email
             </a>{" "}
@@ -645,7 +650,7 @@ export const footer = [
             <i>
               <Facebook />
             </i>{" "}
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               Facebook
             </a>{" "}
           </a>
@@ -657,7 +662,7 @@ export const footer = [
             <i>
               <FontAwesomeIcon icon={faXTwitter} />
             </i>{" "}
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
               {" "}
               Twitter
             </a>{" "}
@@ -670,7 +675,7 @@ export const footer = [
             <i>
               <Instagram />
             </i>{" "}
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
               Instagram
             </a>{" "}
           </a>
@@ -684,7 +689,7 @@ export const footer = [
             </i>{" "}
             <a
               href="https://www.linkedin.com/in/dagmawi-ama-b79405210"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               Linkdin
             </a>{" "}
@@ -849,7 +854,7 @@ export const footers = [
             <i>
               <EmailOutlined />
             </i>{" "}
-            <a href="mailto:amaredagmawi1@gmail.com/" target="_blank">
+            <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
               {" "}
               Email
             </a>{" "}
@@ -862,7 +867,7 @@ export const footers = [
             <i>
               <Facebook />
             </i>{" "}
-            <a href="https://www.facebook.com" target="_blank">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               Facebook
             </a>{" "}
           </a>
@@ -874,7 +879,7 @@ export const footers = [
             <i>
               <FontAwesomeIcon icon={faXTwitter} />
             </i>{" "}
-            <a href="https://www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
               {" "}
               Twitter
             </a>{" "}
@@ -887,7 +892,7 @@ export const footers = [
             <i>
               <Instagram />
             </i>{" "}
-            <a href="https://www.instagram.com" target="_blank">
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
               Instagram
             </a>{" "}
           </a>
@@ -901,7 +906,7 @@ export const footers = [
             </i>{" "}
             <a
               href="https://www.linkedin.com/in/dagmawi-ama-b79405210"
-              target="_blank"
+              target="_blank" rel="noreferrer"
             >
               Linkdin
             </a>{" "}
@@ -914,7 +919,7 @@ export const footers = [
         <i>
           <EmailOutlined />
         </i>{" "}
-        <a href="mailto:amaredagmawi1@gmail.com/" target="_blank">
+        <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
           {" "}
           <i>
             <EmailOutlined />
@@ -923,7 +928,7 @@ export const footers = [
       </a>
     ),
     facebook: (
-      <a href="https://www.facebook.com" target="_blank">
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
         <i>
           <Facebook />
         </i>{" "}
@@ -935,7 +940,7 @@ export const footers = [
         <i>
           <FontAwesomeIcon icon={faXTwitter} />
         </i>{" "}
-        <a href="https://www.twitter.com" target="_blank">
+        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
           {" "}
           X-Media
         </a>{" "}
@@ -946,7 +951,7 @@ export const footers = [
         <i>
           <Instagram />
         </i>{" "}
-        <a href="https://www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
           Instagram
         </a>{" "}
       </a>
@@ -958,7 +963,7 @@ export const footers = [
         </i>{" "}
         <a
           href="https://www.linkedin.com/in/dagmawi-ama-b79405210"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Linkdin
         </a>{" "}

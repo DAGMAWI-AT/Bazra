@@ -6,8 +6,8 @@ import Home from "../home/Home"
 import About from "../about/About"
 import Blog from "../blog/Blog"
 import Contact from "../contact/contactpage"
-import video from '../../video.mp4';
-import Services from "../services/Services"
+// import video from '../../video.mp4';
+// import Services from "../services/Services"
 import Portfolio from "../portfolioBC/Portfolio"
 
 import Singlepost  from "../blog/singlepost"

@@ -1,15 +1,17 @@
-import { useEffect } from "react";
+// eslint-disable-next-line no-unused-vars
+import  react  from "react";
 import Heading from "../common/Heading";
-import { Banservice, service } from "../data/Data";
-import { Link, Element, scroller } from 'react-scroll';
-import { useHistory ,useNavigate} from "react-router-dom";
+import {  service } from "../data/Data";
+import { scroller } from 'react-scroll';
+import { useNavigate} from "react-router-dom";
 
-import Portfolio from "../portfolioBC/Portfolio";
+// import Portfolio from "../portfolioBC/Portfolio";
 import "./Services.css";
-import Services from "./Services";
+// import Services from "./Services";
 const ServicesSE = () => {
 
 
+    // eslint-disable-next-line no-unused-vars
     const scrollToTarget = () => {
         scroller.scrollTo('targetElement', {
           smooth: true,

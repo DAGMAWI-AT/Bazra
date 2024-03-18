@@ -1,15 +1,16 @@
 import { useEffect } from "react";
-import Heading from "../common/Heading";
-import { Banservice, service } from "../data/Data";
-import { Link, Element, scroller } from 'react-scroll';
+// import Heading from "../common/Heading";
+import { Banservice } from "../data/Data";
+import {  scroller } from 'react-scroll';
 import "./Service1s.css";
-import ServicesSE from "./ServicesSE";
+// import ServicesSE from "./ServicesSE";
 
 const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  // eslint-disable-next-line no-unused-vars
   const scrollToTarget = () => {
     scroller.scrollTo('targetElement', {
       smooth: true,

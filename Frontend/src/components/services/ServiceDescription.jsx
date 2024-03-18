@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { serviceData } from "../data/Data";
-import { useLocation, useHistory,useNavigate } from "react-router-dom";
+import { useLocation,useNavigate } from "react-router-dom";
 import './ServiceDescription.css';
 import { Link } from 'react-router-dom';
 
 
 const ServiceDescription = () => {
   // Placeholder data for six services
+  // eslint-disable-next-line no-unused-vars
   const history = useNavigate();
   const { search } = useLocation();
   const [selectedService, setSelectedService] = useState(null);
