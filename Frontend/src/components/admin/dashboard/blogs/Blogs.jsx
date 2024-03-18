@@ -12,7 +12,7 @@ const Blogs = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = tableData.slice(indexOfFirstItem, indexOfLastItem);
+  // const currentItems = tableData.slice(indexOfFirstItem, indexOfLastItem);
   const [editBlog, setEditBlog] = useState(null);
   const navigate = useNavigate();
   const totalPages = Math.ceil(tableData.length / itemsPerPage);
@@ -172,7 +172,7 @@ const Blogs = () => {
             </button>
 
             <h2>{selectedBlog.ttl}</h2>
-            <img src={selectedBlog.img} className="text-center" />
+            <img src={selectedBlog.img} alt="Blog Imag" className="text-center" />
             <p>{selectedBlog.dsc}</p>
           </div>
         )}

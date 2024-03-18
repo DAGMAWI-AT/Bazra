@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Label, TextInput } from 'flowbite-react';
+import { Label, TextInput } from 'flowbite-react';
 
 function BannerAdd() {
   const [title, setTitle] = useState('');
@@ -115,7 +115,7 @@ function BannerAdd() {
           </div>
           {imagePreview && (
             <div className='lg:w-1/2'>
-              <img src={imagePreview} alt='Image Preview' className='max-w-full h-auto' />
+              <img src={imagePreview} alt="Banner Prevew" className='max-w-full h-auto' />
             </div>
           )}
         </div>

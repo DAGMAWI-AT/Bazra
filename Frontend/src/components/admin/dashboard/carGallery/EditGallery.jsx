@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 
 function EditGallery() {
-  const { id } = useParams();
+  // const { id } = useParams();
   const [formData, setFormData] = useState({
     name: '',
     carmodal: '',
