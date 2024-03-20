@@ -7,6 +7,9 @@ import Services from "../services/Servicepage";
 import About from "../about/About";
 import Blog from "../blog/Blog";
 import Contact from "../contact/contactpage";
+import Singlepost from "../blog/singlepost";
+
+
 import Dashboard from "../admin/dashboard/Dashboard";
 import DashboardLayout from "../admin/dashboard/DashboardLayout";
 import EditCars from "../admin/dashboard/poftfoliocar/EditCars";
@@ -34,7 +37,6 @@ import Testimoni from "../admin/dashboard/testimoni/Testimoni";
 import UploadTestimoni from "../admin/dashboard/testimoni/UploadTestimoni";
 import EditTestimoni from "../admin/dashboard/testimoni/EditTestimoni";
 import Footers from "../admin/dashboard/footers/Footers";
-
 import UploadFooters from "../admin/dashboard/footers/UploadFooters";
 import EditFooters from "../admin/dashboard/footers/EditFooters";
 import Ourservice from "../admin/dashboard/ourservice/Ourservice";
@@ -55,7 +57,6 @@ import AboutDepartment from "../admin/dashboard/aboutsDepartment/AboutDepartment
 import UploadAboutDepartment from "../admin/dashboard/aboutsDepartment/UploadAboutDepartment";
 import EditAboutDepartment from "../admin/dashboard/aboutsDepartment/EditAboutDepartment";
 import EditService from "../admin/dashboard/service/EditService";
-import Singlepost from "../blog/singlepost";
 
 
 const router = createBrowserRouter([
