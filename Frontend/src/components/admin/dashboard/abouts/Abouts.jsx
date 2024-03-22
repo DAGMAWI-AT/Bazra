@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { about } from '../../../data/Data';
 import Modal from 'react-modal';
-
 function Abouts() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
