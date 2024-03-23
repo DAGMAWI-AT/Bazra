@@ -12,44 +12,38 @@ import {
 import CircleBar from "./CircleBar";
 const data = [
   {
-    name: "Month",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400
+    name: "Month 1",
+    Visited_User: 4000,
+
   },
   {
     name: "Month",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210
+    Visited_User: 3000,
+
   },
   {
     name: "Month",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290
+    Visited_User: 2000,
+
   },
   {
     name: "Month",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000
+    Visited_User: 2780,
+
   },
   {
     name: "Month",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181
+    Visited_User: 1890,
+   
   },
   {
     name: "Month",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500
+    Visited_User: 2390,
+   
   },
   {
     name: "Month",
-    uv: 3490,
+    Visited_User: 3490,
     pv: 4300,
     amt: 2100
   }
@@ -79,14 +73,14 @@ function Dashboard() {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
-          <Line
+          {/* <Legend /> */}
+          {/* <Line
             type="monotone"
             dataKey="pv"
             stroke="#8884d8"
             activeDot={{ r: 8 }}
-          />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          /> */}
+          <Line type="monotone" dataKey="Visited_User" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>
     </div>
