@@ -6,7 +6,7 @@ import Navbars from "./Navbar";
 
 function DashboardLayout() {
   return (
-    <div className="flex flex-row md:flex-row h-screen overflow-hidden">
+    <div className="flex flex-row md:flex-row sm:flex-row h-screen overflow-hidden">
       <SideBar />
       <div className="flex flex-col flex-1 overflow-hidden">
         <Navbars />

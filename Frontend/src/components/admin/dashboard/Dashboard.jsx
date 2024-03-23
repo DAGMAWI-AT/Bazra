@@ -9,8 +9,7 @@ import {
   Legend,
   ResponsiveContainer
 } from "recharts";
-import CircleBar from "./CircleBar"; // Import the CircleBar component
-
+import CircleBar from "./CircleBar";
 const data = [
   {
     name: "Page A",
@@ -59,7 +58,7 @@ const data = [
 function Dashboard() {
   return (
     <div>
-      <ResponsiveContainer width="99%" height={300}>
+      {/* <ResponsiveContainer width="99%" height={300}>
         <LineChart
           data={data}
           margin={{
@@ -82,10 +81,10 @@ function Dashboard() {
           />
           <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
         </LineChart>
-      </ResponsiveContainer>
+      </ResponsiveContainer> */}
       {/* Adding CircleBar component */}
       <div style={{ textAlign: "center", marginTop: 20 }}>
-        <CircleBar percentage={70} /> {/* Adjust percentage as needed */}
+        <CircleBar percentage={70} /> 
       </div>
     </div>
   );
