@@ -58,7 +58,14 @@ const data = [
 function Dashboard() {
   return (
     <div>
-      {/* <ResponsiveContainer width="99%" height={300}>
+
+      {/* Adding CircleBar component */}
+      <div style={{ textAlign: "center", marginTop: 20 ,marginBottom:30}}>
+        <CircleBar percentage={70} /> 
+      </div>
+
+
+      <ResponsiveContainer className="bg-white p-5 ml-5 shadow-lg rounded-xl" width="70%" height={300}>
         <LineChart
           data={data}
           margin={{
@@ -81,11 +88,7 @@ function Dashboard() {
           />
           <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
         </LineChart>
-      </ResponsiveContainer> */}
-      {/* Adding CircleBar component */}
-      <div style={{ textAlign: "center", marginTop: 20 }}>
-        <CircleBar percentage={70} /> 
-      </div>
+      </ResponsiveContainer>
     </div>
   );
 }
