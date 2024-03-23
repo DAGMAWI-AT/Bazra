@@ -11,43 +11,15 @@ import {
 } from "recharts";
 import CircleBar from "./CircleBar";
 const data = [
-  {
-    name: "Month 1",
-    Visited_User: 4000,
+  {  name: "Month 1",Visited_User: 100,},
+  {  name: "Month", Visited_User: 300,},
+  { name: "Month", Visited_User: 200,},
+  { name: "Month", Visited_User: 278,},
+  { name: "Month", Visited_User: 190,},
+  {  name: "Month", Visited_User: 230,},
+  {  name: "Month",Visited_User: 390, pv: 4300,amt: 2100}
 
-  },
-  {
-    name: "Month",
-    Visited_User: 3000,
-
-  },
-  {
-    name: "Month",
-    Visited_User: 2000,
-
-  },
-  {
-    name: "Month",
-    Visited_User: 2780,
-
-  },
-  {
-    name: "Month",
-    Visited_User: 1890,
-   
-  },
-  {
-    name: "Month",
-    Visited_User: 2390,
-   
-  },
-  {
-    name: "Month",
-    Visited_User: 3490,
-    pv: 4300,
-    amt: 2100
-  }
-];
+              ];
 
 function Dashboard() {
   return (
@@ -59,13 +31,13 @@ function Dashboard() {
       </div>
 
 
-      <ResponsiveContainer className="bg-white p-5 ml-5 shadow-lg rounded-xl" width="70%" height={300}>
+      <ResponsiveContainer className="bg-white p-3 ml-5 shadow-lg rounded-xl" width="70%" height={300}>
         <LineChart
           data={data}
           margin={{
-            top: 5,
-            right: 30,
-            left: 20,
+            top: 10,
+            right: 20,
+            left: 0,
             bottom: 5
           }}
         >
@@ -73,7 +45,7 @@ function Dashboard() {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          {/* <Legend /> */}
+          <Legend />
           {/* <Line
             type="monotone"
             dataKey="pv"
