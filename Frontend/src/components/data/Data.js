@@ -802,7 +802,7 @@ export const testimonials = [
     name: "Dr. Yayehyirad Asnake,",
     icon: [
       <a
-        href="mailto:amaredagmawi1@gmail.com"
+        href="mailto:yayushaye@yahoo.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -825,7 +825,6 @@ export const testimonials = [
     cover: "../testimoni.png",
     text: "good for all in bazra",
     name: "Mr. Brhanu ",
-    // address: "amaredagmawi1@gmail.com",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
       <i class="fa-brands fa-linkedin"></i>,
@@ -838,7 +837,6 @@ export const testimonials = [
     cover: "../testimoni.png",
     text: "good for all in bazra",
     name: "Mr/DR/Ms",
-    // address: "amaredagmawi1@gmail.com",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
       <i class="fa-brands fa-linkedin"></i>,
@@ -863,7 +861,6 @@ export const testimonials = [
     prof: "Founder",
     cover: "../testimoni.png",
     text: "good for all in bazra",
-    // address: "amaredagmawi1@gmail.com",
     name: "Dr. Yayehyirad Asnake,",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
@@ -877,7 +874,6 @@ export const testimonials = [
     cover: "../testimoni.png",
     text: "good for all in bazra",
     name: "Mr. Lealem. S",
-    // address: "amaredagmawi1@gmail.com",
 
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
@@ -893,11 +889,11 @@ export const blog = [
     title: "For New Car",
     cover: "../lada.JPEG",
     Desc: "Manufacturing of motor vehicles, accessories, spare parts and trailers Addis Ababa, Ethiopia",
-    author: "DAGMAWI",
+    author: "Dr. Yayehyirad Asnake",
     date: <i> Date :2016:03:03</i>,
     icon: [
       <a
-        href="mailto:amaredagmawi1@gmail.com"
+        href="mailto:yayushaye@yahoo.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -932,7 +928,7 @@ export const blog = [
     title: "For New Car",
     cover: "../lada1.JPEG",
     Desc: "Manufacturing of motor vehicles, accessories, spare parts and trailersAddis Ababa, Ethiopia",
-    author: "Dagmawi A",
+    author: "Dr. Yayehyirad Asnake",
     date: "10",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
@@ -945,7 +941,7 @@ export const blog = [
     title: "For New Car",
     cover: "../lada2.JPEG",
     Desc: "Manufacturing of motor vehicles, accessories, spare parts and trailers Addis Ababa, Ethiopia",
-    author: "Dagmawi Amare",
+    author: "Dr. Yayehyirad Asnake",
     date: "10",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
@@ -958,7 +954,7 @@ export const blog = [
     title: "For New Car",
     cover: "../lada2.JPEG",
     Desc: "Manufacturing of motor vehicles, accessories, spare parts and trailers Addis Ababa, Ethiopia",
-    author: "Dagmawi Amare",
+    author: "Dr. Yayehyirad Asnake",
     date: "10",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
