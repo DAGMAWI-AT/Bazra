@@ -18,40 +18,26 @@ const data = [
   { name: "Month", Visited_User: 190,},
   {  name: "Month", Visited_User: 230,},
   {  name: "Month",Visited_User: 390, pv: 4300,amt: 2100}
-
-              ];
+];
 
 function Dashboard() {
   return (
     <div>
-
       {/* Adding CircleBar component */}
-      <div style={{ textAlign: "center", marginTop: 20 ,marginBottom:30}}>
+      <div className="text-center mt-5 mb-10">
         <CircleBar percentage={70} /> 
       </div>
 
-
-      <ResponsiveContainer className="bg-white p-3 ml-5 shadow-lg rounded-xl" width="70%" height={300}>
+      <ResponsiveContainer className="bg-white p-1 pt-2 md:ml-5 md:shadow-lg md:rounded-xl" width="97%" height={300}>
         <LineChart
           data={data}
-          margin={{
-            top: 10,
-            right: 20,
-            left: 0,
-            bottom: 5
-          }}
+
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Legend />
-          {/* <Line
-            type="monotone"
-            dataKey="pv"
-            stroke="#8884d8"
-            activeDot={{ r: 8 }}
-          /> */}
           <Line type="monotone" dataKey="Visited_User" stroke="#82ca9d" />
         </LineChart>
       </ResponsiveContainer>

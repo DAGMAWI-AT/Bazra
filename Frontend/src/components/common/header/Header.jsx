@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { nav } from "../../data/Data";
 import { NavLink ,Link} from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // eslint-disable-next-line no-unused-vars
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { faXTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 // eslint-disable-next-line no-unused-vars
 import { CropRotate, PieChart, Settings, ViewInAr, Code, BarChart, CloudOutlined, FacoritBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material"
@@ -47,9 +48,9 @@ const Header = () => {
 
         <div>
           
-          <span><i> <a href="mailto:amaredagmawi1@gmail.com" target="_blank" rel="noreferrer"><EmailOutlined /></a></i> </span>
-          {/* <span><a href=""> <PhoneIphone/>+251985187059</a></span><br/> */}
-          <span> <a href="https://www.linkedin.com/in/dagmawi-ama-b79405210" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faLinkedin} /> </a></span>
+          {/* <span><i> <a href="mailto:amaredagmawi1@gmail.com" target="_blank" rel="noreferrer"><EmailOutlined /></a></i> </span>
+          <span><a href=""> <PhoneIphone/>+251985187059</a></span><br/> 
+          <span> <a href="https://www.linkedin.com/in/dagmawi-ama-b79405210" target="_blank" rel="noreferrer"> <FontAwesomeIcon icon={faLinkedin} /> </a></span> */}
         </div>
 
 

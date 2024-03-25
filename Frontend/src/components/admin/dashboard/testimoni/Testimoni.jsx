@@ -11,8 +11,8 @@ const navigate =useNavigate();
         cover:  "../testimoni.png",
         text: "good for all in bazra",
         // address: "Addis Ababa",
-        name: "Dr. Yayerad A",
-        icon: [<a href="mailto:amaredagmawi1@gmail.com" target="_blank" rel="noopener noreferrer">
+        name: "Dr. Yayehyirad Asnake,",
+        icon: [<a href="mailto:yayushaye@yahoo.com" target="_blank" rel="noopener noreferrer">
         <i class="fab fa-google"></i>
       </a>,<a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>, <i class='fa-brands fa-linkedin'></i>, <i class='fa-brands fa-twitter'></i>, <i class='fa-brands fa-instagram'></i>],
       },
@@ -35,7 +35,7 @@ const navigate =useNavigate();
       {
         prof: "Softwar Engineer",
         text: "contact bazra and good for all in bazra",
-        cover:  "../IMG_7525A.JPG",
+        cover:  "../testimoni.png",
         // address: "Addis Ababa",
         name: "dagmawi",
         icon: [<i class='fa-brands fa-facebook-f'></i>, <i class='fa-brands fa-linkedin'></i>, <i class='fa-brands fa-twitter'></i>, <i class='fa-brands fa-instagram'></i>],

@@ -11,8 +11,10 @@ import {
   HiInbox,
   HiLogout,
   HiMenu,
+  HiMenuAlt1,
   HiOutlineCloudUpload,
   HiOutlineMenu,
+  HiOutlineMenuAlt3,
   HiOutlineMenuAlt4,
   HiShoppingBag,
   HiTable,
@@ -20,6 +22,7 @@ import {
   HiViewBoards,
 } from "react-icons/hi";
 import "./admin.css";
+import { MenuItem } from "@mui/material";
 
 function SideBar() {
   const [isCollapsed, setCollapsed] = useState(false);
@@ -67,7 +70,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/managebanner"
-              icon={HiViewBoards}
+              icon={HiOutlineMenuAlt3}
               className={`sidebar-item ${
                 activeItem === "Banner" ? "active" : ""
               }`}
@@ -78,7 +81,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/managecars"
-              icon={HiViewBoards}
+              icon={HiOutlineMenu}
               className={`sidebar-item ${
                 activeItem === "Portfolio" ? "active" : ""
               }`}

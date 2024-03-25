@@ -396,8 +396,8 @@ export const contact = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          Friendship Business Center, Airport Rd, Addis
-        </a>
+           Friendship Building, Africa Avenue        
+           </a>
       </i>
     ),
   },
@@ -419,7 +419,7 @@ export const contact = [
           target="_blank"
           rel="noopener noreferrer"
         >
-          +251 985187059
+          + 251 116151212
         </a>
       </a>
     ),
@@ -429,7 +429,7 @@ export const contact = [
       <a>
         <MdEmail />
         <a title="mail"
-          href="mailto:amaredagmawi1@gmail.com"
+          href="mailto:yayushaye@yahoo.com"
           target="_blank"
           rel="noopener noreferrer"
         ></a>
@@ -438,9 +438,9 @@ export const contact = [
     text: (
       <a>
         {" "}
-        <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
+        <a href="mailto:yayushaye@yahoo.com/" target="_blank" rel="noreferrer">
           {" "}
-          amaredagmawi1@gmail.com
+          yayushaye@yahoo.com
         </a>{" "}
       </a>
     ),
@@ -637,7 +637,7 @@ export const footer = [
             <i>
               <EmailOutlined />
             </i>{" "}
-            <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
+            <a href="mailto:yayushaye@yahoo.com/" target="_blank" rel="noreferrer">
               {" "}
               Email
             </a>{" "}
@@ -688,7 +688,7 @@ export const footer = [
               <FontAwesomeIcon icon={faLinkedin} />
             </i>{" "}
             <a
-              href="https://www.linkedin.com/in/dagmawi-ama-b79405210"
+              href="https://www.linkedin.com/in/"
               target="_blank" rel="noreferrer"
             >
               Linkdin
@@ -715,7 +715,7 @@ export const footer = [
                 </i>
                 Location
               </b>{" "}
-              Friendship Business Center, Airport Rd, Ethiopia
+              Friendship Building, Africa Avenue
             </a>
           </a>
         ),
@@ -727,9 +727,9 @@ export const footer = [
               <i>
                 <Public />
               </i>
-              Office no:{" "}
+              Office No: {" "}
             </b>{" "}
-            105
+            506, Fifth Floor,
           </a>
         ),
       },
@@ -740,9 +740,9 @@ export const footer = [
               <i>
                 <Public />
               </i>
-              floor no:{" "}
-            </b>{" "}
-            5{" "}
+              House No: 
+            </b>
+             5597/506, Worda 2, Sub-City Bole,
           </a>
         ),
       },
@@ -758,7 +758,7 @@ export const footer = [
             <i>
               <PhoneIphone />
             </i>
-            <b>Receprion </b> 0985187059
+            <b>Mob: </b>  + 251 911239976/+ 251 911762127
           </a>
         ),
       },
@@ -769,9 +769,9 @@ export const footer = [
               <i>
                 <PhoneIphone />
               </i>
-              Pepole
-            </b>{" "}
-            09090909
+              Tel:  
+            </b>
+            + 251 116151212
           </a>
         ),
       },
@@ -782,9 +782,9 @@ export const footer = [
               <i>
                 <PhoneIphone />
               </i>
-              Sales
-            </b>{" "}
-            09090909
+              Fax:
+            </b>
+            +251 116151221
           </a>
         ),
       },
@@ -792,208 +792,14 @@ export const footer = [
   },
 ];
 
-export const footers = [
-  {
-    title: "hello",
-    text: [
-      {
-        list: (
-          <Link to="/">
-            <a href="/">
-              <b>Home</b>
-            </a>
-          </Link>
-        ),
-      },
-      {
-        list: (
-          <Link to="/services">
-            {" "}
-            <a href="/services">
-              <b>Service</b>
-            </a>
-          </Link>
-        ),
-      },
-      {
-        list: (
-          <Link to="/about">
-            {" "}
-            <a href="/about">
-              <b>About Us</b>
-            </a>
-          </Link>
-        ),
-      },
-      {
-        list: (
-          <Link to="/blog">
-            <a href="/blog">
-              <b>Blogs</b>
-            </a>
-          </Link>
-        ),
-      },
-      {
-        list: (
-          <Link to="/contactpage">
-            <a href="/contactpage">
-              <b>Contacts</b>
-            </a>
-          </Link>
-        ),
-      },
-    ],
-  },
-  {
-    title: "Social",
-    social: [
-      {
-        list: (
-          <a>
-            <i>
-              <EmailOutlined />
-            </i>{" "}
-            <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
-              {" "}
-              Email
-            </a>{" "}
-          </a>
-        ),
-      },
-      {
-        list: (
-          <a>
-            <i>
-              <Facebook />
-            </i>{" "}
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-              Facebook
-            </a>{" "}
-          </a>
-        ),
-      },
-      {
-        list: (
-          <a>
-            <i>
-              <FontAwesomeIcon icon={faXTwitter} />
-            </i>{" "}
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-              {" "}
-              Twitter
-            </a>{" "}
-          </a>
-        ),
-      },
-      {
-        list: (
-          <a>
-            <i>
-              <Instagram />
-            </i>{" "}
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-              Instagram
-            </a>{" "}
-          </a>
-        ),
-      },
-      {
-        list: (
-          <a>
-            <i>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </i>{" "}
-            <a
-              href="https://www.linkedin.com/in/dagmawi-ama-b79405210"
-              target="_blank" rel="noreferrer"
-            >
-              Linkdin
-            </a>{" "}
-          </a>
-        ),
-      },
-    ],
-    email: (
-      <a>
-        <i>
-          <EmailOutlined />
-        </i>{" "}
-        <a href="mailto:amaredagmawi1@gmail.com/" target="_blank" rel="noreferrer">
-          {" "}
-          <i>
-            <EmailOutlined />
-          </i>
-        </a>
-      </a>
-    ),
-    facebook: (
-      <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
-        <i>
-          <Facebook />
-        </i>{" "}
-        Facebook
-      </a>
-    ),
-    x: (
-      <a>
-        <i>
-          <FontAwesomeIcon icon={faXTwitter} />
-        </i>{" "}
-        <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-          {" "}
-          X-Media
-        </a>{" "}
-      </a>
-    ),
-    instagram: (
-      <a>
-        <i>
-          <Instagram />
-        </i>{" "}
-        <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-          Instagram
-        </a>{" "}
-      </a>
-    ),
-    linkedin: (
-      <a>
-        <i>
-          <FontAwesomeIcon icon={faLinkedin} />
-        </i>{" "}
-        <a
-          href="https://www.linkedin.com/in/dagmawi-ama-b79405210"
-          target="_blank" rel="noreferrer"
-        >
-          Linkdin
-        </a>{" "}
-      </a>
-    ),
-  },
-  // {
-  //   title: "Location",
-  //   location: [
-  //     { list:<a><a href="https://maps.google.com?q=Friendship+Business+Center,+Airport+Rd,+Addis" target="_blank" rel="noopener noreferrer"><b><i><AddLocationAltOutlined/> </i>Location</b> Friendship Business Center, Airport Rd, Ethiopia</a></a>},
-  //     { list:  <a><b><i><Public/></i>Office no: </b> 105</a>},
-  //     { list:  <a><b><i><Public/></i>floor no: </b> 5 </a>}
-  //   ],
-  // },
-  // {
-  //   title: "Call Us",
-  //   phoneNO:[
-  //     { list:  <a> <i><PhoneIphone/></i><b>Receprion </b> 0985187059</a>},
-  //     { list: <a><b><i><PhoneIphone/></i>Pepole</b> 09090909</a> },
-  //     { list: <a><b><i><PhoneIphone/></i>Sales</b> 09090909</a> }
-  //   ],
-  // },
-];
+
 export const testimonials = [
   {
     prof: "Founder",
     cover: "../testimoni.png",
     text: "good for all in bazra",
     // address: "Addis Ababa",
-    name: "Dr. Yayerad A",
+    name: "Dr. Yayehyirad Asnake,",
     icon: [
       <a
         href="mailto:amaredagmawi1@gmail.com"
@@ -1040,25 +846,25 @@ export const testimonials = [
       <i class="fa-brands fa-instagram"></i>,
     ],
   },
-  {
-    prof: "Softwar Engineer",
-    text: "contact bazra and good for all in bazra",
-    cover: "../IMG_7525A.JPG",
-    // address: "Addis Ababa",
-    name: "dagmawi",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
-  },
+  // {
+  //   prof: "Softwar Engineer",
+  //   text: "contact bazra and good for all in bazra",
+  //   cover: "../testimoni.png",
+  //   // address: "Addis Ababa",
+  //   name: "Dagmawi",
+  //   icon: [
+  //     <i class="fa-brands fa-facebook-f"></i>,
+  //     <i class="fa-brands fa-linkedin"></i>,
+  //     <i class="fa-brands fa-twitter"></i>,
+  //     <i class="fa-brands fa-instagram"></i>,
+  //   ],
+  // },
   {
     prof: "Founder",
     cover: "../testimoni.png",
     text: "good for all in bazra",
     // address: "amaredagmawi1@gmail.com",
-    name: "Dr. Yayerad A",
+    name: "Dr. Yayehyirad Asnake,",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
       <i class="fa-brands fa-linkedin"></i>,
