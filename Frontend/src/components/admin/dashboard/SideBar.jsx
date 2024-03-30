@@ -23,8 +23,8 @@ import {
 } from "react-icons/hi";
 import "./admin.css";
 import { MenuItem, TableFooter } from "@mui/material";
-import { BrowseGalleryOutlined, CarRentalSharp, Countertops, DesignServicesOutlined, PeopleOutlineSharp } from "@mui/icons-material";
-import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { BrowseGalleryOutlined, CarRentalSharp, Contacts, Countertops, DesignServicesOutlined, PeopleOutlineSharp, ProductionQuantityLimitsOutlined } from "@mui/icons-material";
+import { MdDesignServices, MdOutlineVolunteerActivism, MdSquareFoot } from "react-icons/md";
 
 function SideBar() {
   const [isCollapsed, setCollapsed] = useState(false);
@@ -160,7 +160,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/footers"
-              icon={TableFooter}
+              icon={MdSquareFoot}
               className={`sidebar-item ${
                 activeItem === "Footers" ? "active" : ""
               }`}
@@ -171,7 +171,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/ourservice"
-              icon={HiChartPie}
+              icon={MdDesignServices}
               className={`sidebar-item ${
                 activeItem === "Ourservice" ? "active" : ""
               }`}
@@ -182,7 +182,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/product"
-              icon={HiChartPie}
+              icon={ProductionQuantityLimitsOutlined}
               className={`sidebar-item ${
                 activeItem === "Products" ? "active" : ""
               }`}
@@ -193,7 +193,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/contacts"
-              icon={HiChartPie}
+              icon={Contacts}
               className={`sidebar-item ${
                 activeItem === "Contacts" ? "active" : ""
               }`}
