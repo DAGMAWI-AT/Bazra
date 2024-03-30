@@ -23,7 +23,7 @@ import {
 } from "react-icons/hi";
 import "./admin.css";
 import { MenuItem } from "@mui/material";
-import { CarRentalSharp, PeopleOutlineSharp } from "@mui/icons-material";
+import { BrowseGalleryOutlined, CarRentalSharp, DesignServicesOutlined, PeopleOutlineSharp } from "@mui/icons-material";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 function SideBar() {
@@ -116,7 +116,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/manageservice"
-              icon={HiInbox}
+              icon={DesignServicesOutlined}
               className={`sidebar-item ${
                 activeItem === "Services" ? "active" : ""
               }`}
@@ -127,7 +127,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/cargallery_slider"
-              icon={HiUser}
+              icon={BrowseGalleryOutlined}
               className={`sidebar-item ${
                 activeItem === "Gallery" ? "active" : ""
               }`}
