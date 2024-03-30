@@ -23,6 +23,7 @@ import {
 } from "react-icons/hi";
 import "./admin.css";
 import { MenuItem } from "@mui/material";
+import { CarRentalSharp } from "@mui/icons-material";
 
 function SideBar() {
   const [isCollapsed, setCollapsed] = useState(false);
@@ -81,7 +82,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/managecars"
-              icon={HiOutlineMenu}
+              icon={CarRentalSharp}
               className={`sidebar-item ${
                 activeItem === "Portfolio" ? "active" : ""
               }`}

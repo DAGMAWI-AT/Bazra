@@ -703,7 +703,6 @@ export const footer = [
     text: [
       {
         list: (
-          <a>
             <a
               href="https://maps.google.com?q=Friendship+Business+Center,+Airport+Rd,+Addis"
               target="_blank"
@@ -717,7 +716,6 @@ export const footer = [
               </b>{" "}
               Friendship Building, Africa Avenue
             </a>
-          </a>
         ),
       },
       {
@@ -727,7 +725,7 @@ export const footer = [
               <i>
                 <Public />
               </i>
-              Office No: {" "}
+              Office No: {""}
             </b>{" "}
             506, Fifth Floor,
           </a>
@@ -740,9 +738,8 @@ export const footer = [
               <i>
                 <Public />
               </i>
-              House No: 
-            </b>
-             5597/506, Worda 2, Sub-City Bole,
+              House No:</b> {"5597/506, Worda 2, Sub-City Bole"} 
+            
           </a>
         ),
       },
