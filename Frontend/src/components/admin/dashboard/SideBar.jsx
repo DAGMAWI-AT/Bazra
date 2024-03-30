@@ -24,6 +24,7 @@ import {
 import "./admin.css";
 import { MenuItem } from "@mui/material";
 import { CarRentalSharp, PeopleOutlineSharp } from "@mui/icons-material";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 function SideBar() {
   const [isCollapsed, setCollapsed] = useState(false);
@@ -104,7 +105,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/managecompanyoverview"
-              icon={HiInbox}
+              icon={MdOutlineVolunteerActivism}
               className={`sidebar-item ${
                 activeItem === "Overview" ? "active" : ""
               }`}
