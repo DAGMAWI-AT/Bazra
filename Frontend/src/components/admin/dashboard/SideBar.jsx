@@ -23,7 +23,7 @@ import {
 } from "react-icons/hi";
 import "./admin.css";
 import { MenuItem } from "@mui/material";
-import { BrowseGalleryOutlined, CarRentalSharp, DesignServicesOutlined, PeopleOutlineSharp } from "@mui/icons-material";
+import { BrowseGalleryOutlined, CarRentalSharp, Countertops, DesignServicesOutlined, PeopleOutlineSharp } from "@mui/icons-material";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 function SideBar() {
@@ -138,7 +138,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/counters"
-              icon={HiShoppingBag}
+              icon={Countertops}
               className={`sidebar-item ${
                 activeItem === "Counter" ? "active" : ""
               }`}
