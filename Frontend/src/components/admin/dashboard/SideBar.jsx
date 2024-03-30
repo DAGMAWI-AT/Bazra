@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { Sidebar } from "flowbite-react";
-import { BiBuoy } from "react-icons/bi";
+import { BiBuoy, BiTestTube } from "react-icons/bi";
 
 import {
   HiArrowSmRight,
@@ -22,7 +22,7 @@ import {
   HiViewBoards,
 } from "react-icons/hi";
 import "./admin.css";
-import { MenuItem } from "@mui/material";
+import { MenuItem, TableFooter } from "@mui/material";
 import { BrowseGalleryOutlined, CarRentalSharp, Countertops, DesignServicesOutlined, PeopleOutlineSharp } from "@mui/icons-material";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 
@@ -149,7 +149,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/testimoni"
-              icon={HiArrowSmRight}
+              icon={BiTestTube}
               className={`sidebar-item ${
                 activeItem === "Testimoni" ? "active" : ""
               }`}
@@ -160,7 +160,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/footers"
-              icon={HiLogout}
+              icon={TableFooter}
               className={`sidebar-item ${
                 activeItem === "Footers" ? "active" : ""
               }`}
