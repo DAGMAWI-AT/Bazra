@@ -23,7 +23,7 @@ import {
 } from "react-icons/hi";
 import "./admin.css";
 import { MenuItem } from "@mui/material";
-import { CarRentalSharp } from "@mui/icons-material";
+import { CarRentalSharp, PeopleOutlineSharp } from "@mui/icons-material";
 
 function SideBar() {
   const [isCollapsed, setCollapsed] = useState(false);
@@ -93,7 +93,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/managewhoweare"
-              icon={HiInbox}
+              icon={PeopleOutlineSharp}
               className={`sidebar-item ${
                 activeItem === "Who Are We" ? "active" : ""
               }`}
