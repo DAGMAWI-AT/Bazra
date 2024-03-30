@@ -23,7 +23,7 @@ import {
 } from "react-icons/hi";
 import "./admin.css";
 import { MenuItem, TableFooter } from "@mui/material";
-import { BrowseGalleryOutlined, CarRentalSharp, Contacts, Countertops, DesignServicesOutlined, PeopleOutlineSharp, ProductionQuantityLimitsOutlined } from "@mui/icons-material";
+import { BrowseGalleryOutlined, CarRentalSharp, Contacts, Countertops, DesignServicesOutlined, History, LocalFireDepartment, PeopleOutlineSharp, PostAddOutlined, ProductionQuantityLimitsOutlined } from "@mui/icons-material";
 import { MdDesignServices, MdOutlineVolunteerActivism, MdSquareFoot } from "react-icons/md";
 
 function SideBar() {
@@ -204,7 +204,7 @@ function SideBar() {
             <Sidebar.Item
               as={Link}
               to="/admin/dashboard/blogs"
-              icon={HiChartPie}
+              icon={PostAddOutlined}
               className={`sidebar-item ${
                 activeItem === "Blogs" ? "active" : ""
               }`}
@@ -215,7 +215,7 @@ function SideBar() {
             <Sidebar.Item
             as={Link}
             to="/admin/dashboard/abouts"
-            icon={HiChartPie}
+            icon={History}
             className={`sidebar-item ${
               activeItem === "Abouts" ? "active" : ""
             }`}
@@ -226,7 +226,7 @@ function SideBar() {
           <Sidebar.Item
           as={Link}
           to="/admin/dashboard/aboutsdepartment"
-          icon={HiChartPie}
+          icon={LocalFireDepartment}
           className={`sidebar-item ${
             activeItem === "Depatment" ? "active" : ""
           }`}
