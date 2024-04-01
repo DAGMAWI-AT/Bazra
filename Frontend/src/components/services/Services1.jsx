@@ -50,7 +50,7 @@ const Services = () => {
                    data--delay="0.6s"
                    style={{ visibility: 'visible', animationDelay: '0.2s', animationName: 'fadeInRight' }}
                  >
-                 <a href="/contactpage" className="software_banner_btn elementor-repeater-item-abf08bf" > Contact </a>
+                 <a href="/contact" className="software_banner_btn elementor-repeater-item-abf08bf" > Contact </a>
                  </div>
                </div>
              </div>

@@ -40,7 +40,7 @@ const ServiceDescription = () => {
                 <strong className="text-uppercase">{service.title}</strong>
               </p>
               <p>{service.description}</p>
-            <Link to="/contactpage" >          
+            <Link to="/contact" >          
               <a href={service.websiteLink}  rel="noopener noreferrer" className="btn-visit">
               👉 Contact us for more information
               </a>

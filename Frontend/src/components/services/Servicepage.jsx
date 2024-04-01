@@ -23,8 +23,8 @@ const Servicepage = () => {
           At bazra motors, we are dedicated to providing cutting-edge solutions tailored to meet the unique needs of the car manifacturing sector. Our comprehensive range of services is designed to empower businesses and drive success in a rapidly evolving landscape.
         </p>
        
-         <Link to="/contactpage" >          
-         <a href="/contactpage" className="service-button">
+         <Link to="/contact" >          
+         <a href="/contact" className="service-button">
         👉 Get in Touch 👈
         </a>
           </Link>
