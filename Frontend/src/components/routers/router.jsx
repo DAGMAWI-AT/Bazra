@@ -60,6 +60,7 @@ import EditService from "../admin/dashboard/service/EditService";
 import SignUp from "../admin/SignUp";
 import PrivateRoute from "../../PrivateRoute/PrivateRoute";
 import Login from "../admin/Login";
+import Logout from "../admin/Logout";
 
 
 const router = createBrowserRouter([
@@ -384,6 +385,10 @@ const router = createBrowserRouter([
   {
     path:"/admin/login",
     element:<Login/>,
+  },
+  {
+    path:"/admin/logout",
+    element:<Logout/>,
   }
 
 ]);
