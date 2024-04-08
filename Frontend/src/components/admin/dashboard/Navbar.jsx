@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Avatar, Dropdown, Navbar } from 'flowbite-react';
 import { Search } from '@mui/icons-material';
+import { AuthContext } from '../../../Auths/AuthProvider';
 
 function Navbars() {
   const [searchQuery, setSearchQuery] = useState('');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
+  const {user}=useContext(AuthContext);
+  console.log(user)
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
   };
@@ -30,6 +32,7 @@ function Navbars() {
               className="px-2 py-1 rounded-full border text-black border-gray-300 focus:outline-none focus:border-blue-500 text-sm w-full" // Adjusted padding and font size, allow to grow
             />
           </div>
+
         </div>
         {/* <div className="flex items-center ">
           <Dropdown
@@ -54,6 +57,7 @@ function Navbars() {
             <Dropdown.Item className="w-30 h-8">Sign out</Dropdown.Item>
           </Dropdown>
         </div> */}
+       <div className='text-black'>{user?user.email:""}</div> 
       </Navbar>
       {isDropdownOpen && (
         <div className="absolute top-full right-0 z-10">

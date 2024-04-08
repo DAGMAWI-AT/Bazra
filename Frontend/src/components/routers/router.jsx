@@ -57,6 +57,7 @@ import AboutDepartment from "../admin/dashboard/aboutsDepartment/AboutDepartment
 import UploadAboutDepartment from "../admin/dashboard/aboutsDepartment/UploadAboutDepartment";
 import EditAboutDepartment from "../admin/dashboard/aboutsDepartment/EditAboutDepartment";
 import EditService from "../admin/dashboard/service/EditService";
+import SignUp from "../admin/SignUp";
 
 
 const router = createBrowserRouter([
@@ -374,6 +375,10 @@ const router = createBrowserRouter([
 },
     ],
   },
+  {
+    path:"/register",
+    element:<SignUp/>,
+  }
 ]);
 
 export default router;
