@@ -58,6 +58,8 @@ import UploadAboutDepartment from "../admin/dashboard/aboutsDepartment/UploadAbo
 import EditAboutDepartment from "../admin/dashboard/aboutsDepartment/EditAboutDepartment";
 import EditService from "../admin/dashboard/service/EditService";
 import SignUp from "../admin/SignUp";
+import PrivateRoute from "../../PrivateRoute/PrivateRoute";
+import Login from "../admin/Login";
 
 
 const router = createBrowserRouter([
@@ -102,7 +104,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/admin/dashboard",
-        element: <Dashboard />,
+        element: <PrivateRoute><Dashboard /></PrivateRoute> ,
       },
       // {
       //   path: "/admin/dashboard/servicescontent",
@@ -378,7 +380,12 @@ const router = createBrowserRouter([
   {
     path:"/register",
     element:<SignUp/>,
+  },
+  {
+    path:"/admin/login",
+    element:<Login/>,
   }
+
 ]);
 
 export default router;
