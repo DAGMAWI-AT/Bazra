@@ -9,7 +9,6 @@ import Blog from "../blog/Blog";
 import Contact from "../contact/contactpage";
 import Singlepost from "../blog/singlepost";
 
-
 import Dashboard from "../admin/dashboard/Dashboard";
 import DashboardLayout from "../admin/dashboard/DashboardLayout";
 import EditCars from "../admin/dashboard/poftfoliocar/EditCars";
@@ -61,7 +60,7 @@ import SignUp from "../admin/SignUp";
 import PrivateRoute from "../../PrivateRoute/PrivateRoute";
 import Login from "../admin/Login";
 import Logout from "../admin/Logout";
-
+import Users from "../admin/dashboard/createUsers/Users";
 
 const router = createBrowserRouter([
   {
@@ -96,16 +95,19 @@ const router = createBrowserRouter([
         path: "/Contact",
         element: <Contact />,
       },
-
     ],
   },
   {
     path: "/admin/dashboard",
-    element: <DashboardLayout />,
+    element: (
+      <PrivateRoute>
+        <DashboardLayout />
+      </PrivateRoute>
+    ),
     children: [
       {
         path: "/admin/dashboard",
-        element: <PrivateRoute><Dashboard /></PrivateRoute> ,
+        element: <Dashboard />,
       },
       // {
       //   path: "/admin/dashboard/servicescontent",
@@ -239,7 +241,6 @@ const router = createBrowserRouter([
         //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
       },
 
-
       //testimoni manage
 
       {
@@ -258,9 +259,9 @@ const router = createBrowserRouter([
 
       //footer manager
 
-       //testimoni manage
+      //testimoni manage
 
-       {
+      {
         path: "/admin/dashboard/footers",
         element: <Footers />,
       },
@@ -294,7 +295,7 @@ const router = createBrowserRouter([
         //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
       },
 
-      //service product 
+      //service product
 
       {
         path: "/admin/dashboard/product",
@@ -310,87 +311,90 @@ const router = createBrowserRouter([
         //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
       },
 
-//// contacts//////
+      //// contacts//////
 
-            //service product 
+      //service product
 
-            {
-              path: "/admin/dashboard/contacts",
-              element: <Contacts />,
-            },
-            {
-              path: "/admin/dashboard/uploadcontacts",
-              element: <UploadProduct />,
-            },
-            {
-              path: "/admin/dashboard/edit-contacts/:id",
-              element: <EditProduct />,
-              //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
-            },
+      {
+        path: "/admin/dashboard/contacts",
+        element: <Contacts />,
+      },
+      {
+        path: "/admin/dashboard/uploadcontacts",
+        element: <UploadProduct />,
+      },
+      {
+        path: "/admin/dashboard/edit-contacts/:id",
+        element: <EditProduct />,
+        //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
+      },
 
+      ////blogs////
 
-            ////blogs////
+      {
+        path: "/admin/dashboard/blogs",
+        element: <Blogs />,
+      },
+      {
+        path: "/admin/dashboard/uploadblogs",
+        element: <UploadBlogs />,
+      },
+      {
+        path: "/admin/dashboard/edit-blogs/:id",
+        element: <EditBlogs />,
+        //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
+      },
 
-            {
-              path: "/admin/dashboard/blogs",
-              element: <Blogs />,
-            },
-            {
-              path: "/admin/dashboard/uploadblogs",
-              element: <UploadBlogs />,
-            },
-            {
-              path: "/admin/dashboard/edit-blogs/:id",
-              element: <EditBlogs />,
-              //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
-            },
+      //Abouts
 
-//Abouts 
+      {
+        path: "/admin/dashboard/abouts",
+        element: <Abouts />,
+      },
+      {
+        path: "/admin/dashboard/uploadabouts",
+        element: <UploadAbouts />,
+      },
+      {
+        path: "/admin/dashboard/edit-abouts/:id",
+        element: <EditAbouts />,
+        //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
+      },
+      //aboute department
 
-
-{
-  path: "/admin/dashboard/abouts",
-  element: <Abouts />,
-},
-{
-  path: "/admin/dashboard/uploadabouts",
-  element: <UploadAbouts />,
-},
-{
-  path: "/admin/dashboard/edit-abouts/:id",
-  element: <EditAbouts />,
-  //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
-},
-//aboute department
-
-{
-  path: "/admin/dashboard/aboutsdepartment",
-  element: <AboutDepartment />,
-},
-{
-  path: "/admin/dashboard/uploadaboutsdeparment",
-  element: <UploadAboutDepartment />,
-},
-{
-  path: "/admin/dashboard/edit-aboutsdepartment/:id",
-  element: <EditAboutDepartment />,
-  //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
-},
+      {
+        path: "/admin/dashboard/aboutsdepartment",
+        element: <AboutDepartment />,
+      },
+      {
+        path: "/admin/dashboard/uploadaboutsdeparment",
+        element: <UploadAboutDepartment />,
+      },
+      {
+        path: "/admin/dashboard/edit-aboutsdepartment/:id",
+        element: <EditAboutDepartment />,
+        //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
+      },
+      //to create users to manage bazra website
+      {
+        path: "/admin/dashboard/users",
+        element: <Users />,
+        //  loader: ({params})=>fetch(`../../../data/Data/counter/${params.id}`)
+      },
     ],
   },
   {
-    path:"/register",
-    element:<SignUp/>,
+    path: "/register",
+    element: <SignUp />,
   },
   {
-    path:"/admin/login",
-    element:<Login/>,
+    path: "/admin/login",
+    element: <Login />,
   },
   {
-    path:"/admin/logout",
-    element:<Logout/>,
-  }
-
+    path: "/admin/logout",
+    element: <Logout />,
+  },
 ]);
 
 export default router;

@@ -1,35 +1,43 @@
 /* eslint-disable no-unused-vars */
 // components/SideBar.js
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { Sidebar } from "flowbite-react";
 import { BiBuoy, BiTestTube } from "react-icons/bi";
 
 import {
-  HiArrowSmRight,
   HiChartPie,
-  HiInbox,
+
   HiLogout,
+
   HiMenu,
-  HiMenuAlt1,
-  HiOutlineCloudUpload,
+
   HiOutlineMenu,
   HiOutlineMenuAlt3,
-  HiOutlineMenuAlt4,
-  HiShoppingBag,
-  HiTable,
-  HiUser,
+ 
   HiViewBoards,
 } from "react-icons/hi";
 import "./admin.css";
-import { MenuItem, TableFooter } from "@mui/material";
 import { BrowseGalleryOutlined, CarRentalSharp, Contacts, Countertops, DesignServicesOutlined, History, LocalFireDepartment, PeopleOutlineSharp, PostAddOutlined, ProductionQuantityLimitsOutlined } from "@mui/icons-material";
 import { MdDesignServices, MdOutlineVolunteerActivism, MdSquareFoot } from "react-icons/md";
-
+import { useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from "../../../Auths/AuthProvider";
 function SideBar() {
   const [isCollapsed, setCollapsed] = useState(false);
   const [activeItem, setActiveItem] = useState(""); // State to track the active item
+  const {logout}=useContext(AuthContext);
+  const location =useLocation();
+  const navigate = useNavigate();
+  const from =location.state?.from?.pathname||"/"
 
+  const handleLogout =()=>{
+      logout().then(()=>{
+      alert("Logout Successfuly!");
+      navigate(from,{replace:true})
+  }).catch((error)=> {
+
+  });
+  }
   const toggleCollapse = () => {
     setCollapsed((prevCollapsed) => !prevCollapsed);
   };
@@ -39,9 +47,9 @@ function SideBar() {
 
   return (
     <div className={`sidebar-wrapper ${isCollapsed ? "collapsed" : ""}`}>
-      <Sidebar
+      <Sidebar className="bg-blue-600"
         aria-label="Sidebar with content separator example"
-        style={{ background: "#2a2185" }}
+        style={{ background: "#2a2185"}} 
       >
         <Sidebar.Items className="toggle-collapse" onClick={toggleCollapse}>
           {isCollapsed ? <HiOutlineMenu /> : <HiMenu />}
@@ -239,7 +247,7 @@ function SideBar() {
           <Sidebar.ItemGroup>
             <Sidebar.Item
               as={Link}
-              to="/admin/dashboard/aboutsdepartment"
+              to="/admin/dashboard/users"
               icon={HiChartPie}
               className={`sidebar-item ${
                 activeItem === "Create User" ? "active" : ""
@@ -250,14 +258,14 @@ function SideBar() {
             </Sidebar.Item>
             <Sidebar.Item
               as={Link}
-              to="/admin/dashboard/settings"
-              icon={HiViewBoards}
+              // to="/"
+              icon={HiLogout}
               className={`sidebar-item ${
                 activeItem === "Settings" ? "active" : ""
               }`}
               onClick={() => handleItemClick("Settings")}
             >
-              {isCollapsed ? null : <p>Settings</p>}
+              {isCollapsed ? null : <p onClick={handleLogout}>Logout</p>}
             </Sidebar.Item>
             <Sidebar.Item
               as={Link}

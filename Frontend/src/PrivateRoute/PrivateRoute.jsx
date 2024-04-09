@@ -8,10 +8,21 @@ const PrivateRoute = ({children}) => {
     const {user,loading}=useContext(AuthContext);
     const location =useLocation();
 
-    if(loading){
-        return <div className='text-center'>
-            <Spinner aria-label='Center-aligned spinner example'/>
+    if (loading) {
+      return (
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh', 
+          }}
+        >
+          <div className='text-center'>
+            <Spinner aria-label='center-aligned spinner example' />
+          </div>
         </div>
+      );
     }
 
     if(user){
