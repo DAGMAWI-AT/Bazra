@@ -48,7 +48,7 @@ const SignUp = () => {
 							<input id="password" name="password" type="password" className="peer  h-10 w-full border-b-2 border-gray-300 text-gray-900 focus:outline-none focus:borer-rose-600" placeholder="Password" />
 						</div>
 						<div className="relative">
-							<button className="bg-blue-500 text-white rounded-md px-2 py-1">Submit</button>
+							<button className="bg-blue-500 text-white rounded-md px-2 py-1">Sign Up</button>
 						</div>
 					</form>
 				</div>
