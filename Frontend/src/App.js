@@ -19,7 +19,6 @@ function App() {
     Aos.init();
     Aos.refresh();
   }, []);
-
   const videoContainerStyle = {
     // position: 'relative',
     width: '100%',
