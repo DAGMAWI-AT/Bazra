@@ -65,7 +65,7 @@ export default function Posts() {
   const location = useLocation();
   const isSinglepostPage = location.pathname.includes('/blog/singlepost'); 
    const postsClassName = isSinglepostPage ? 'posts-singlepost' : 'posts';
-  const titleContent = isSinglepostPage ? 'Related blogs' : 'Recently added blogs';
+  const titleContent = isSinglepostPage ? 'Related News' : 'Recently added news';
   const titleClassName = isSinglepostPage ? 'c-singlepost heading' : 'c heading';
   return (
     <>

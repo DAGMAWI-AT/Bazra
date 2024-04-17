@@ -16,6 +16,7 @@
   --secondaryBackground: #2f3030;
   --primaryColor: #e0a80d;
   --greyDark: #7d8792;
+  --greyhark: #686868;
   --headingColor: #2d2e2e;
   --white: #fff;
   --black: #000;
@@ -30,7 +31,7 @@ body {
 }
 
 a {
-  color: var(--greyDark);
+  color: var(--greyhark);
   text-decoration: none;
   transition: 0.5s;
 }

@@ -10,7 +10,7 @@ const Blog = () => {
   return (
     <>
       <div>
-        <BackBlog title='Welcome To Our BLOG' cover={img} />
+        <BackBlog title='Welcome To Our News' cover={img} />
         <div className="home">
           <Post />
           {/* <Sidebar /> */}

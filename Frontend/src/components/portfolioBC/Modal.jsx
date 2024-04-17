@@ -1,36 +1,42 @@
 // components/Modal.js
-import React from 'react';
-import PropTypes from 'prop-types';
-import './Modal.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./Modal.css";
 
 const Modal = ({ item, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <span className="
+        <span
+          className="
        close-btn bg-blue-500 text-white px-2 py-1 mt-4 float-right"
- onClick={onClose}>
+          onClick={onClose}
+        >
           &times;
         </span>
         {item && (
           <div className="modal-container">
             <div className="modal-image">
-              <img src={item.imageUrl} alt={item.name} />
+              <img
+                src={`http://localhost:8000/portfoliocar/${item.image}`}
+                alt={item.name}
+              />
             </div>
             <div className="modal-details">
               <h2>{item.name}</h2>
-              <p>
-                <strong>Model:</strong> {item.model}
-              </p>
+              <p><strong>Model:</strong> {item.model}</p>
               <p>
                 <strong>Category:</strong> {item.category}
               </p>
               <p>
-              <strong>Color:</strong> {item.model}
-            </p>
-            <p>
-              <strong>Engin:</strong> {item.model}
-            </p>
+                <strong>Color:</strong> {item.colors}
+              </p>
+              <p>
+                <strong>Engin:</strong> {item.engine}
+              </p>
+              <p>
+                <strong>Fuel:</strong> {item.fuel_consumption}
+              </p>
               <p>
                 <strong>Description:</strong> {item.description}
               </p>

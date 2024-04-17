@@ -4,77 +4,28 @@ const port = process.env.PORT || 8000;
 const cors = require("cors");
 const multer = require("multer");
 const path = require("path");
-// const { google } = require("googleapis");
-// require('dotenv').config();
-
-// const scopes = "https://www.googleapis.com/auth/analytics.readonly";
-
-// const jwt = new google.auth.JWT(
-//   process.env.CLIENT_EMAIL,
-//   null,
-//   process.env.PRIVATE_KEY.replace(/\\n/g, "\n"),
-//   scopes
-// );
-// const view_id = "299588117";
-
-// // async function getViews(){
-// //   try {
-// //     await jwt.authorize();
-
-// //     const response = await google.analytics("v3").data.ga.get({
-// //       auth: jwt,
-// //       ids: "ga:" + view_id,
-// //       "start-date": "30daysAgo",
-// //       "end-date": "today",
-// //       metrics: "ga:pageviews",
-// //     });
-
-// //     console.log(response);
-
-// //   } catch (err) {
-// //      console.log(err);
-// //   }
-// // };
-
-// // getViews();
-
-
-// async function getTopPosts() {
-//   try {
-//     await jwt.authorize();
-
-//     const response = await google.analytics("v3").data.ga.get({
-//       auth: jwt,
-//       ids: "ga:" + view_id,
-//       "start-date": "2019-01-01",
-//       "end-date": "today",
-//       dimensions: "ga:pagePath,ga:pageTitle",
-//       metrics: "ga:pageviews",
-//       sort: "-ga:pageviews",
-//       "max-results": "10",
-//       filters: "ga:medium==organic",
-//     });
-
-//    console.log(response);
-//   } catch (err) {
-//    console.log(err);
-//   }
-// };
-// getTopPosts();
-//end of google analytics api code
-
-
 app.use(cors());
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 app.use("/videos", express.static(path.join(__dirname, "public/videos")));
 app.use("/overview", express.static(path.join(__dirname, "public/overview")));
-
+app.use("/portfoliocar", express.static(path.join(__dirname, "public/portfoliocar")));
 
 // ... Your route and MongoDB configuration code to  sote image and video
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "public/images");
+  },
+  filename: (req, file, cb) => {
+    cb(
+      null,
+      file.fieldname + "_" + Date.now() + path.extname(file.originalname)
+    );
+  },
+});
+const portfoliocarstorage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "public/portfoliocar");
   },
   filename: (req, file, cb) => {
     cb(
@@ -129,6 +80,9 @@ if (!fs.existsSync(destinationDirectory)) {
 const upload = multer({ storage: storage });
 const uploadVideos = multer({ storage: storageVideos });
 const bzoverviewUpload = multer({ storage: bzoverviewimage });
+const portfoliocarUpload = multer({ storage: portfoliocarstorage });
+
+portfoliocarstorage
 // const uploadServiceImage = multer({ storage: imagestorage });
 
 app.get("/", (req, res) => {
@@ -451,16 +405,25 @@ async function run() {
 
 // portfolio secton server side 
     //insert cars data to db :use post metod
-    app.post("/addcars", async (req, res) => {
+    app.post("/addcars", portfoliocarUpload.single("image"), async (req, res) => {
+
+    // app.post("/addcars", async (req, res) => {
       const data = req.body;
+      data.image = req.file.filename; // Save the filename in MongoDB
+
       const result = await carscollaction.insertOne(data);
       res.send(result);
     });
     //update car data use patch mehode
+    app.patch( "/updatecars/:id", portfoliocarUpload.single("image"), async (req, res) => {
 
-    app.patch("/updatecars/:id", async (req, res) => {
       const id = req.params.id;
       const updatecardata = req.body;
+      if (req.file) {
+        // If a new image file is provided, update the imageFile property
+        updatecardata.image = req.file.filename;
+      }
+
       const filter = { _id: new ObjectId(id) };
 
       const updateDoc = {

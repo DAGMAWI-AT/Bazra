@@ -44,7 +44,7 @@ const handleSearchClick = () => {
   return (
     <>
       <div className="singlBnn">
-        <BackBlog title='DETAIL BLOG' cover={img} />
+        <BackBlog title='DETAIL NEWS' cover={img} />
       </div>
 
       <Link className="backto" type="button" to='/blog'>
@@ -74,7 +74,7 @@ const handleSearchClick = () => {
         <div className="rightSection">
           {/* Add your blog search component here */}
           <div className="blogSearch">
-            <h2>Blog Search</h2>
+            <h2>News Search</h2>
             {/* Search input and button */}
             <div className="searchContainer">
           <input
@@ -105,7 +105,7 @@ const handleSearchClick = () => {
         </div>
 
         <div className="recentBlogs">
-        <h2>Recent Blogs</h2>
+        <h2>Recent News</h2>
         {postData.slice( 5, ).map((recentPost) => (
           <Link key={recentPost.id} to={`/blog/singlepost/${recentPost.id}`} className="recentPostLink">
          <ul>

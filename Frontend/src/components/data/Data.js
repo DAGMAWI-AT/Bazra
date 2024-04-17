@@ -44,7 +44,7 @@ export const nav = [
     path: "/about",
   },
   {
-    text: "Blog",
+    text: "News",
     path: "/blog",
   },
 
@@ -148,9 +148,9 @@ export const about = [
     cover: "../IMGlogo1.jpg",
     title: "any + years of exprince in the manifacturing industry",
     moreDesc:
-      "bazra moters is a fully etiopian owned Conpany that foucuses on value mazimi ans is a service oriented solution provider , estavlished in we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services",
+      "bazra group is a fully etiopian owned Conpany that foucuses on value mazimi ans is a service oriented solution provider , estavlished in we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services",
     bannerDesc:
-      "bazra moters is a fully etiopian owned Conpany that foucuses on value mazimi ans is a service oriented solution provider , estavlished in we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services",
+      "bazra group is a fully etiopian owned Conpany that foucuses on value mazimi ans is a service oriented solution provider , estavlished in we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services",
   },
 ];
 
@@ -158,14 +158,14 @@ export const overview = [
   {
     id: 1,
     title: "Exprience",
-    Desc: "Ethiopian-owned company with 30+ years of experience in car manufacturing service-oriented company",
+    Desc: "Ethiopian-owned company with 10+ years of experience in car manufacturing service-oriented company",
     cover: "../icon1.png",
   },
   {
     id: 2,
     icon: <Settings />,
     title: "Founder",
-    Desc: "Founded by__ Bazra Motors, based in Addis Ababa, Ethiopia",
+    Desc: "Founded by Dr. Yeyehyirad Asnake Bazra Group, based in Addis Ababa, Ethiopia",
     cover: "../icon2.png",
   },
   {
@@ -187,7 +187,7 @@ export const overview = [
     id: 5,
     icon: <Settings />,
     title: "Revenu",
-    Desc: "Annual Revenue of 'number+' many ETB OR DOLAR",
+    Desc: "Annual Revenue of '10M+' many ETB ",
     cover: "../icon5.png",
   },
   {
@@ -204,42 +204,42 @@ export const service = [
     id: 1,
     icon: <Settings />,
     title: "Manifucturing",
-    Desc: "Bazra moters Manifucturing",
+    Desc: "Bazra Group Manifucturing",
     cover: "../bz1.png",
   },
   {
     id: 2,
     icon: <CropRotate />,
     title: "Transport",
-    Desc: "Bazra Motors Transport",
+    Desc: "Bazra Group Transport",
     cover: "../bz1.png",
   },
   {
     id: 3,
     icon: <ViewInAr />,
     title: "Motor Vihecle Part",
-    Desc: "Bazra Motors  Vihecle Part",
+    Desc: "Bazra Group  Vihecle Part",
     cover: "../bz1.png",
   },
   {
     id: 4,
     icon: <PieChart />,
     title: "Import-Export",
-    Desc: "Bazra Motors  Import-Export",
+    Desc: "Bazra Group  Import-Export",
     cover: "../bz1.png",
   },
   {
     id: 5,
     icon: <Code />,
     title: "Motor Engineering",
-    Desc: "Bazra Motors  Motor Engineering",
+    Desc: "Bazra Group  Motor Engineering",
     cover: "../bz1.png",
   },
   {
     id: 5,
     icon: <BarChart />,
     title: "Agriculture",
-    Desc: "Bazra Motors Agriculture",
+    Desc: "Bazra Group Agriculture",
     cover: "../bz1.png",
   },
 ];
@@ -249,7 +249,7 @@ export const Banservice = [
     id: 1,
     icon: <Settings />,
     title: "",
-    Desc: "Bazra Motors description in this About us bazra moters plc",
+    Desc: "Bazra Group description in this About us bazra moters plc",
     cover: "../service12.png",
   },
 ];
@@ -821,7 +821,7 @@ export const testimonials = [
     prof: "Finance Manager",
     cover: "../testimoni.png",
     text: "good for all in bazra",
-    name: "Mr. Brhanu ",
+    name: "Mr. Getu B. ",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
       <i class="fa-brands fa-linkedin"></i>,

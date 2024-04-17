@@ -24,14 +24,15 @@ function ViewCars() {
     <div className="text-center car-details-container">
       <h2 className="car-details-title">Car Details</h2>
       <div className="car-image-container">
-        <img src={car.imageUrl} alt="" className="car-image" />
+        <img src={`http://localhost:8000/portfoliocar/${car.image}`} alt="" className="car-image" />
       </div>
 
       <div className="car-info">
         <p className="car-info-item"><strong>Name:</strong> {car.name}</p>
-        <p className="car-info-item"><strong>Color:</strong> {car.color}</p>
+        <p className="car-info-item"><strong>Color:</strong> {car.colors}</p>
         <p className="car-info-item"><strong>Model:</strong> {car.model}</p>
-        <p className="car-info-item"><strong>Engin:</strong> {car.engin}</p>
+        <p className="car-info-item"><strong>Engin:</strong> {car.engine}</p>
+        <p className="car-info-item"><strong>fuel consumption:</strong> {car.fuel_consumption}</p>
         <p className="car-info-item"><strong>Category:</strong> {car.category}</p>
         <p className="car-info-item"><strong>Price:</strong> Birr{car.price}</p>
         {/* Add more car details as needed */}

@@ -10,12 +10,21 @@ const Portfolio = () => {
   const [selectedItem, setSelectedItem] = useState(null); // To track the selected item
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+
+  const truncateDescription = (description, maxLength) => {
+    if (description.length > maxLength) {
+      return description.substring(0, maxLength) + "...";
+    } else {
+      return description;
+    }
+  };
+
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
   }, []);
 
   useEffect(() => {
-    fetch("https://bazra.onrender.com/allcars")
+    fetch("http://localhost:8000/allcars")
       .then((res) => res.json())
       .then((data) => {
         setCars(data);
@@ -74,12 +83,17 @@ const Portfolio = () => {
             {list.map((item, i) => (
               <div key={i} className='box' onClick={() => openModal(item)}>
                 <div className="img">
-                  <img src={item.imageUrl} alt="" />
+                  {/* <img src={item.image} alt="" /> */}
+
+                  <img
+                    src={`http://localhost:8000/portfoliocar/${item.image}`}
+                    alt={item.name}
+                  />
                 </div>
                 <div className="overlay">
                   <h3>{item.name}</h3>
                   <h3>{item.category}</h3>
-                  <span>{item.description}</span>
+                  <span className='m-1 p-1'>{truncateDescription(item.description, 50)}</span> {/* Adjust the second parameter to specify the maximum number of characters */}
                 </div>
               </div>
             ))}

@@ -1,17 +1,40 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import { Button, Label, Select, TextInput, Textarea } from 'flowbite-react';
 
 function EditCars() {
   const {id} = useParams();
   const navigate = useNavigate(); // Create a navigate function
+  const [cars, setCars] = useState({ name: '', category: '', description: '', price: '', image: '',engine:'',colors:'',model:'',fuel_consumption:'' });
+  const [imagePreview, setImagePreview] = useState(cars.image ? `http://localhost:8000/portfoliocar/${cars.image}` : null);
 
-  const { name, category, imageUrl, description, price } = useLoaderData();
-  console.log("Loader Data:", { name, category, imageUrl, description, price });
+  const { name, category, image, description, price,engine,colors,model,fuel_consumption } = useLoaderData();
   
-  const carCategory = ["Lada Vasta", "Lada 4x4", "Lada Cross"];
+  const carCategory = ["LadaVesta", "Lada4x4", "LadaCross"];
   const [selectedCarCategory, setSelectedCarCategory] = useState(carCategory[0]);
   const [editingCategory, setEditingCategory] = useState(false);
+
+  useEffect(() => {
+    // Fetch the banner data based on the ID when the component mounts
+    fetch(`http://localhost:8000/allcars/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setCars(data);
+        // Set the initial image preview if a default value exists
+        if (data.image) {
+          setImagePreview(`http://localhost:8000/portfoliocar/${data.image}`);
+        }
+      })
+      .catch((error) => console.error('Error fetching portfolio data:', error));
+  }, [id]);
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+
+    if (file) {
+      // Set the image preview
+      setImagePreview(URL.createObjectURL(file));
+    }
+  };
 
   const handleChangeSelectedValue = (event) => {
     const selectedValue = event.target.value;
@@ -31,37 +54,43 @@ function EditCars() {
   const handleCarUpdate = (event) => {
     event.preventDefault();
     const form = event.target;
-
+  
     const name = form.name.value;
     const category = form.category.value;
-    const imageUrl = form.imageUrl.value;
+    const engine = form.engine.value;
+    const colors = form.colors.value;
+    const fuel_consumption = form.fuel_consumption.value;
+    const model = form.model.value;
     const description = form.description.value;
     const price = form.price.value;
-
-    const UpdateCar = {
-      name,
-      category,
-      imageUrl,
-      description,
-      price,
-    };
-console.log(UpdateCar);
-
-
-    fetch(`https://bazra.onrender.com/updatecars/${id}`, {
+    const image = form.image.files[0];
+  
+    // Create FormData object
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('category', category);
+    formData.append("engine", engine);
+    formData.append("colors", colors);
+    formData.append("fuel_consumption", fuel_consumption);
+    formData.append("model", model);
+    formData.append('description', description);
+    formData.append('price', price);
+    if (image) {
+      formData.append('image', image); // Append image file to FormData
+    }
+  
+    // Make fetch request
+    fetch(`http://localhost:8000/updatecars/${id}`, {
       method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(UpdateCar),
+      body: formData, // Use FormData instead of JSON.stringify
     })
       .then((res) => res.json())
       .then((data) => {
         navigate('/admin/dashboard/managecars');
         alert('Car Update Successfully');
-        // navigate('/admin/dashboard/managecars'); // Redirect to the manage cars page
-
-        // form.reset();
+      })
+      .catch((error) => {
+        console.error('Error updating car:', error);
       });
   };
 
@@ -119,7 +148,36 @@ console.log(UpdateCar);
           )}
           
         </div>
+        <div className='flex gap-8'>
+          <div className='lg:w-1/2'>
+            <div className='mb-2 block'>
+              <Label htmlFor='engine' value='Car engine' />
+            </div>
+            <TextInput id='engine' name='engine' type='text' placeholder='engine of car' sizing='lg' defaultValue={engine} required  />
+          </div>
 
+          <div className='lg:w-1/2'>
+            <div className='mb-2 block'>
+              <Label htmlFor='colors' value='Car color' />
+            </div>
+            <TextInput id='colors' name='colors' type='text' placeholder='color of car' sizing='lg' defaultValue={colors} required  />
+          </div>
+        </div>
+        <div className='flex gap-8'>
+          <div className='lg:w-1/2'>
+            <div className='mb-2 block'>
+              <Label htmlFor='model' value='Car model' />
+            </div>
+            <TextInput id='model' name='model' type='text' placeholder='model of car' sizing='lg' defaultValue={model} required  />
+          </div>
+
+          <div className='lg:w-1/2'>
+            <div className='mb-2 block'>
+              <Label htmlFor='fuel_consumption' value='Car fuel consumption' />
+            </div>
+            <TextInput id='fuel_consumption' name='fuel_consumption' type='text' placeholder='fuel consumption of car' sizing='lg' defaultValue={fuel_consumption} required  />
+          </div>
+        </div>
         <div className='flex gap-8'>
           <div className='lg:w-1/2'>
             <div className='mb-2 block'>
@@ -131,8 +189,22 @@ console.log(UpdateCar);
             <div className='mb-2 block'>
               <Label htmlFor='imageUrl' value='Car image' />
             </div>
-            <TextInput id='imageUrl' type='text' sizing='lg' defaultValue={imageUrl} />
-          </div>
+            {imagePreview && (
+              <img
+                src={imagePreview}
+                alt="Preview"
+                style={{ maxWidth: '50%', maxHeight: '100px', marginBottom: '10px' }}
+              />
+            )}
+            <input
+              id="image"
+              name="image"
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+              className='border border-blue-200 rounded-md p-2 w-full'
+            />          
+            </div>
         </div>
 
         <div className='mb-2 block'>
