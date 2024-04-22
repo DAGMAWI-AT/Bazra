@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
         </footer>
-        <p className="legal">© All Right Reserved 2023</p>
+        <p className="legal">© All Right Reserved By BIG 2023</p>
       </div>
     </>
   );
