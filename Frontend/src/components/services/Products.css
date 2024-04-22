@@ -60,12 +60,14 @@
   border-radius: 0;
   box-shadow: 0px 1px 1px 0px #cacaca;
   transition: transform 0.3s;
-  width: 210px; 
+  width: 350px; 
   max-width: 100%;
   /* max-width: 230px;  */
   background-color: fff;
   flex: 0 0 auto;
   overflow: hidden;
+    background-color: var(--primaryBackground);
+
 }
 
 .product-card:hover {
@@ -87,7 +89,8 @@
 
 .product-body {
   padding: 20px;
-  background-color: var(--primaryBackground);
+  /* background-color: var(--primaryBackground); */
+  width: 350px;
 }
 
 .product-title {
@@ -98,6 +101,7 @@
 
 .product-description {
   color: #eee8e8;
+  font-size: 16px;
 }
 .product-dots {
   display: flex;

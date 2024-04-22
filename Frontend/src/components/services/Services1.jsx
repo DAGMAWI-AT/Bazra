@@ -43,8 +43,8 @@ const Services = () => {
                    className="service_p"
                   
                  >
-                   Connect your technology needs for your best business with technology our service and technology service. Practiced and implemented using technology and modern car auto rebuild the.
-                 </p>
+BAZRA connect technology needs of clients for maximum business and personal exploitation supported with state of the art automotive and information technology.  
+At BAZRA, we are dedicated to providing cutting-edge solutions tailored to meet the unique needs of the client in the automotive, agricultural machinery and IT arena. Our comprehensive range of services is designed to empower businesses and drive success in a rapidly evolving economic landscape.                 </p>
                  <div
                    className="action_btn d-flex align-items-center mt_40  fadeInLeft"
                    data--delay="0.6s"

@@ -15,8 +15,7 @@ const Products = () => {
             <a href="/products">Products</a>
           </h2>
           <h4 className="products-subheader">
-            We at Bazra Motors provide the highest quality products and services. We partner with our customers to finish
-            all projects in a timely manner with superior results.
+          BAZRA provides the highest quality automotive and IT products and services. We collaborate with our international partners to maximize customer satisfaction with timely delivery at superior quality.
           </h4>
         </Reveal>
         <div className="products-container-wrapper">
@@ -35,7 +34,7 @@ const Products = () => {
                   <div className="card-body text-center product-body">
                     <Reveal>
                       <h5 className="card-title product-title">{product.title}</h5>
-                      <p className="card-text product-description">{product.description}</p>
+                      <p className="card-text product-description ">{product.description}</p>
                     </Reveal>
                   </div>
                 </div>

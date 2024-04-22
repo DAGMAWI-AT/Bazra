@@ -31,14 +31,15 @@ const WhoWeAre = () => {
             <h2 className='heading'>Who We Are</h2>
           </div>
           <p>
-            Since its establishment in "YEARS", BAZRA has strived to be the
+            {/* Since its establishment in 10+, BAZRA has strived to be the
             nation’s leading manufacturing, IT, agriculture import-export
-            company and through the years it has worked as the main enterprise
+            company and through the 10+ years it has worked as the main enterprise
             solutions provider in Ethiopia. Its partnership with world-renowned
             companies such as LADA, CAR, and CAR has allowed it to provide the
             best products and services at the highest standards with
             international certification making it a world-class company operating
-            in the African continent.
+            in the African continent. */}
+            BAZRA INVESTMENT GROUP functions across a range of businesses and industries so as to achieve business and economic excellence; meanwhile, BAZRA builds on the premise of mutual trust and respect.
           </p>
 
           <button className="Btn" onClick={handleButtonClick}>

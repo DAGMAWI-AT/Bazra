@@ -13,6 +13,7 @@ import Portfolio from "../portfolioBC/Portfolio"
 import Singlepost  from "../blog/singlepost"
 import Servicepage from "../services/Servicepage"
 import ReactGA from 'react-ga';
+import Partnership from "../partnership/Partnership"
 const Pages = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -36,6 +37,7 @@ const Pages = () => {
           <Route exact path="/about" component={About} />
           <Route exact path='/services' component={Servicepage} />
           <Route exact path='/portfolio' component={Portfolio} />
+          <Route exact path='/partnership' component={Partnership} />
           <Route exact path='/contact' component={Contact} />  
           <Route exact path='/blog' component={Blog} />
           <Route path="/blog/singlepost/:id"  component={Singlepost} key={Route.path} />

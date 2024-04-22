@@ -17,7 +17,7 @@ const Modal = ({ item, onClose }) => {
         {item && (
           <div className="modal-container">
             <div className="modal-image">
-              <img
+              <img className="w-full h-full"
                 src={`http://localhost:8000/portfoliocar/${item.image}`}
                 alt={item.name}
               />

@@ -6,7 +6,7 @@ import { Spinner } from 'flowbite-react';
 const PrivateRoute = ({children}) => {
 
     const {user,loading}=useContext(AuthContext);
-    const location =useLocation();
+    const location = useLocation();
 
     if (loading) {
       return (

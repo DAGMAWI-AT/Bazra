@@ -83,7 +83,6 @@ const Portfolio = () => {
             {list.map((item, i) => (
               <div key={i} className='box' onClick={() => openModal(item)}>
                 <div className="img">
-                  {/* <img src={item.image} alt="" /> */}
 
                   <img
                     src={`http://localhost:8000/portfoliocar/${item.image}`}

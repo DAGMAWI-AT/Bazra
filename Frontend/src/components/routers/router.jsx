@@ -61,6 +61,7 @@ import PrivateRoute from "../../PrivateRoute/PrivateRoute";
 import Login from "../admin/Login";
 import Logout from "../admin/Logout";
 import Users from "../admin/dashboard/createUsers/Users";
+import Partnership from "../partnership/Partnership";
 
 const router = createBrowserRouter([
   {
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
       {
         path: "/About",
         element: <About />,
+      },
+      {
+        path: "/Partnership",
+        element: <Partnership />,
       },
       {
         path: "/Blog",
@@ -109,22 +114,7 @@ const router = createBrowserRouter([
         path: "/admin/dashboard",
         element: <Dashboard />,
       },
-      // {
-      //   path: "/admin/dashboard/servicescontent",
-      //   element: <Service />,
-      // },
-      // {
-      //   path: "/admin/dashboard/aboutcontent",
-      //   element: <Aboute />,
-      // },
-      // {
-      //   path: "/admin/dashboard/blogcontent",
-      //   element: <Blogs />,
-      // },
-      // {
-      //   path: "/admin/dashboard/contactcontent",
-      //   element: <Contacts />,
-      // },
+
       {
         path: "/admin/dashboard/managecars",
         element: <ManageCars />,

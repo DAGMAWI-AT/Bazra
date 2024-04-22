@@ -54,179 +54,191 @@ const About = () => {
     <>
 
       <section className="about">
-      {about.map((val, i) => (<>
-        <Back title='About Us - Who We Are?' desc={val.bannerDesc} cover={img} />
-        
-<div>
-          <div name="ID1" className='row'>
-          <div className='container flex mtop' data-aos="fade-down-right">
-              <>
+        {about.map((val, i) => (<>
+          <Back title='About Us - Who We Are?' desc={val.bannerDesc} cover={img} />
+
+          <div>
+            <div name="ID1" className='row'>
+              <div className='container flex mtop' data-aos="fade-down-right">
+                <>
 
 
-                <div className="left row" data-aos="fade-down-left">
-                  <img src={val.cover} alt='' />
-                </div>
-
-                <div className="right row">
-                  <Heading title='About as' subtitle='Check out our company story and work process' data-aos="fade-down-right" />
-                  <div className='column'>
-
-                    <div className='tabs'>
-                      <div className={toggleTab === 1 ? "single-tab  active-tab" : "single-tab"}
-                        onClick={() => toggleState(1)}>
-                        <button className='px-3 py-2 hover:bg-blue-gray-900'>Misson</button>
-                      </div>
-
-                      <div className={toggleTab === 2 ? "single-tab  active-tab" : "single-tab"}
-                        onClick={() => toggleState(2)}>
-                        <button className='px-3 py-2'>Vision </button>
-                      </div>
-
-                      <div className={toggleTab === 3 ? "single-tab active-tab" : "single-tab"}
-                        onClick={() => toggleState(3)}>
-                        <button className='px-3 py-2'>Objective</button>
-                      </div>
-
-                    </div>
-                    <div className="tab-contents">
-                      {/* about content */}
-                      <div className={toggleTab === 1 ? "contents active-contents" : "contents"}>
-
-                      <h3>
-                      Company Info
-                  </h3>
-                  <div className="w-full sm:w-[500px] md:w-[750px] flex flex-auto flex-col">
-                      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
-                          {val.missionDesc}
-                      </p>
+                  <div className="left row" data-aos="fade-down-left">
+                    <img src={val.cover} alt='' />
                   </div>
 
-                        <div className="">
+                  <div className="right row">
+                    <Heading title='About as' subtitle='Check out our company story and work process' data-aos="fade-down-right" />
+                    <div className='column'>
 
-                          <div className="vition-column">
-                            <div className="progress-rap">
-                              <h3>developer</h3>
-                              <div className="progress">
-                                <div className="progress-bar">
-                                  <span>80%</span>
+                      <div className='tabs'>
+                        <div className={toggleTab === 1 ? "single-tab  active-tab" : "single-tab"}
+                          onClick={() => toggleState(1)}>
+                          <button className={`px-3 py-2 ${toggleTab === 1 ? 'bg-blue-gray-900' : ''}`}>Misson</button>
+                        </div>
+
+                        <div className={toggleTab === 2 ? "single-tab active-tab" : "single-tab"} onClick={() => toggleState(2)}>
+                          <button className={`px-3 py-2 ${toggleTab === 2 ? 'bg-blue-gray-900' : ''}`}>Vision</button>
+                        </div>
+
+                        <div className={toggleTab === 3 ? "single-tab active-tab" : "single-tab"}
+                          onClick={() => toggleState(3)}>
+                          <button className={`px-3 py-2 ${toggleTab === 3 ? 'bg-blue-gray-900' : ''}`}>Objective</button>
+                        </div>
+                        <div className={toggleTab === 4 ? "single-tab active-tab" : "single-tab"}
+                          onClick={() => toggleState(4)}>
+                          <button className={`px-3 py-2 ${toggleTab === 4 ? 'bg-blue-gray-900' : ''}`}>Goal</button>
+                        </div>
+
+                      </div>
+                      <div className="tab-contents">
+                        {/* about content */}
+                        <div className={toggleTab === 1 ? "contents active-contents" : "contents"}>
+
+                          <h3>
+                            Misson
+                          </h3>
+                          <div className="w-full sm:w-[500px] md:w-[750px] flex flex-auto flex-col">
+                            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">
+                              {val.missionDesc}
+                            </p>
+                          </div>
+
+                          <div className="">
+
+                            <div className="vition-column">
+                              <div className="progress-rap">
+                                <h3>developer</h3>
+                                <div className="progress">
+                                  <div className="progress-bar">
+                                    <span>80%</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
 
-                          <div className="vition-column">
-                            <div className="progress-rap">
-                              <h3>developer</h3>
-                              <div className="progress">
-                                <div className="progress-bar">
-                                  <span>90%</span>
+                            <div className="vition-column">
+                              <div className="progress-rap">
+                                <h3>developer</h3>
+                                <div className="progress">
+                                  <div className="progress-bar">
+                                    <span>90%</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
 
-                          <div className="vition-column">
-                            <div className="progress-rap">
-                              <h3>developer</h3>
-                              <div className="progress">
-                                <div className="progress-bar">
-                                  <span>80%</span>
+                            <div className="vition-column">
+                              <div className="progress-rap">
+                                <h3>developer</h3>
+                                <div className="progress">
+                                  <div className="progress-bar">
+                                    <span>80%</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
 
-                          <div className="vition-column">
-                            <div className="progress-rap">
-                              <h3>developer</h3>
-                              <div className="progress">
-                                <div className="progress-bar">
-                                  <span>80%</span>
+                            <div className="vition-column">
+                              <div className="progress-rap">
+                                <h3>developer</h3>
+                                <div className="progress">
+                                  <div className="progress-bar">
+                                    <span>80%</span>
+                                  </div>
                                 </div>
                               </div>
                             </div>
+
                           </div>
+
+
+
+
 
                         </div>
 
 
+                        {/* vition content */}
+                        <div className={toggleTab === 2 ? "contents active-contents" : "contents"}>
 
 
-
-                      </div>
-
-
-                      {/* vition content */}
-                      <div className={toggleTab === 2 ? "contents active-contents" : "contents"}>
-
-
-
-                        <div className="w-full">
 
                           <div className="w-full">
-                            <h3>Vision</h3>
+
+                            <div className="w-full">
+                              <h3>Vision</h3>
+                              <div className='w-[750px]'>
+
+                                <p>{val.visionDesc}</p>
+                              </div>
+                            </div>
+
+
+
+                          </div>
+                        </div>
+                        {/*  objective content */}
+                        <div className={toggleTab === 3 ? "contents active-contents" : "contents"}>
+                          <div className="ob-column">
+                            <h3>Objective</h3>
                             <div className='w-[750px]'>
 
-                            <p>{val.visionDesc}</p>
+                              <p>{val.objectiveDesc}</p>
                             </div>
                           </div>
-
-                          
-
                         </div>
-                      </div>
-                      {/*  objective content */}
-                      <div className={toggleTab === 3 ? "contents active-contents" : "contents"}>
-                        <div className="ob-column">
-                          <h3>objective</h3>
-                          <div className='w-[750px]'>
+                        <div className={toggleTab === 4 ? "contents active-contents" : "contents"}>
+                          <div className="ob-column">
+                            <h3>Goal</h3>
+                            <div className='w-[750px]'>
 
-                          <p>{val.objectiveDesc}</p>
+                              <p>{val.goalDesc}</p>
+                            </div>
                           </div>
                         </div>
+
+
+                        {/*                      <button className='primaryBtn' data-aos="fade-down-right">More About Us</button>
+            */}
+
                       </div>
 
 
-{/*                      <button className='primaryBtn' data-aos="fade-down-right">More About Us</button>
-            */}
 
                     </div>
 
-
-
                   </div>
+                </>
 
-                </div>
-              </>
-            
 
-          </div>
-        </div>
-
-        <>
-          <div className="container flex rl">
-
-            <div className="left1 row">
-              <div className="l1">
-                <h1>{val.title}</h1>
-
-                <Link> More Infomarion About Bazra ...</Link>
               </div>
             </div>
-            <hr />
-            <div className="right1 row">
-              <p>{val.moreDesc}
 
-              </p>
-            </div>
+            <>
+              <div className="container flex rl">
 
+                <div className="left1 row">
+                  <div className="l1">
+                    <h1>{val.title}</h1>
+
+                    <Link> More Infomarion About Bazra ...</Link>
+                  </div>
+                </div>
+                <hr />
+                <div className="right1 row">
+                  <p>{val.moreDesc}
+
+                  </p>
+                </div>
+
+              </div>
+
+            </>
           </div>
-
-        </>
-        </div>
         </>
         ))}
-        
+
         {renderCompanyOverview()}
 
 

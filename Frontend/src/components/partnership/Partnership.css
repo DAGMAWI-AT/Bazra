@@ -1,0 +1,107 @@
+.partnership_crumb_area {
+    background-image: url("../../../public/partnership/partnershippic.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.partner-section {
+    margin-top: 50px;
+    background-color: #29292965;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.column {
+    flex-basis: calc(50% - 20px); 
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    margin: 2px;
+    
+}
+.column.main img {
+    margin-left: 90px;
+  }
+.column .column img {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    display: block;
+  }
+.inner-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-section .column {
+    flex-basis: calc(25% - 20px); 
+    margin-bottom: 5px;
+}
+.column .inner-section .row .column a img:hover {
+    background-color: rgb(109, 104, 104);
+  }
+  .main h2{
+    margin-left: 60px;
+
+  }
+
+  .row.even .column {
+    float: left;
+  }
+
+  .row.odd .column {
+    float: right;
+  }
+
+
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex-basis: 100%;
+    }
+    .column .column img {
+    
+        width: 100%;
+        height: 100px;
+        padding: 5px; /* Apply padding directly to images */
+        border-radius: 10px;
+        display: flex;
+    }
+    .inner-section .column {
+        flex-basis: calc(50% - 20px); 
+    }
+    .partnership_crumb_area {
+      
+        height: 90vh;
+      
+    }
+}

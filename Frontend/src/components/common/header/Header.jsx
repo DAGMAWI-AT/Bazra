@@ -41,7 +41,7 @@ const Header = () => {
       <div className="container flexsb">
         <div className='logo'>
         <Link to="/"  data-aos="fade-up-right">
-             <img src='../IMGlogo1.jpg' alt='LOGO' />
+             <img src='../logo1.png' alt='LOGO' />
         </Link>
           {/* <img src='../IMGlogo1.jpg' alt='LOGO' /> */}
         </div>

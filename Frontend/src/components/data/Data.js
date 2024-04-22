@@ -30,10 +30,10 @@ import {
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 
 export const nav = [
-  {
-    text: "Home",
-    path: "/",
-  },
+  // {
+  //   text: "Home",
+  //   path: "/",
+  // },
 
   {
     text: "Services",
@@ -42,6 +42,10 @@ export const nav = [
   {
     text: "About",
     path: "/about",
+  },
+  {
+    text: "Partners",
+    path: "/partnership",
   },
   {
     text: "News",
@@ -53,7 +57,7 @@ export const nav = [
     path: "/contact",
   },
   {
-    text: "Admin",
+    // text: "Admin",
     path: "/admin/dashboard",
   },
 ];
@@ -62,7 +66,7 @@ export const home = [
   {
     text: <i>Lada Vesta</i>,
     title: "Bazra Motors",
-    cover: process.env.PUBLIC_URL + "../hero/vesta3.jpg",
+    cover: process.env.PUBLIC_URL + "../hero/banner1.jpg",
   },
 
   // {
@@ -79,7 +83,7 @@ export const home = [
   {
     text: <i>Lada Niva car</i>,
     title: "Bazra Motors",
-    cover: "../hero/GosProg_112023.webp",
+    cover: "../hero/banner3.jpg",
   },
   {
     text: <i> Lada pres-releas</i>,
@@ -122,35 +126,30 @@ export const about = [
     text: "About us Bazra",
     visionDesc: (
       <p>
-        A company vision, usually expressed in a company vision statement,
-        describes an organization's aspirational long-term goal. Clearly
-        defining your company vision helps guide decision-making, build your
-        brand, and increase employee engagement.
+        Leading the future through connecting businesses and individuals to vital knowledge technology products is our vision!
       </p>
     ),
     objectiveDesc: (
       <p>
-        A company Objectiv, usually expressed in a company vision statement,
-        describes an organization's aspirational long-term goal. Clearly
-        defining your company vision helps guide decision-making, build your
-        brand, and increase employee engagement.
+        Working for the safest and most responsible living, working and moving is our objective.
       </p>
     ),
     missionDesc: (
       <p>
-        A company Mission, usually expressed in a company vision statement,
-        describes an organization's aspirational long-term goal. Clearly
-        defining your company vision helps guide decision-making, build your
-        brand, and increase employee engagement.
+        Building transformation of corporate economy of the group is our mission
       </p>
     ),
-
+    goalDesc: (
+      <p>
+        Our goal is to engaging talent, innovate and serve the highest quality in a better way.     
+         </p>
+    ),
     cover: "../IMGlogo1.jpg",
-    title: "any + years of exprince in the manifacturing industry",
+    title: "10 + years of exprince in the manifacturing industry",
     moreDesc:
-      "bazra group is a fully etiopian owned Conpany that foucuses on value mazimi ans is a service oriented solution provider , estavlished in we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services",
+      "We; BAZRA INVESTMENT GROUP (BIG), are a group of companies doing business in areas of trading, Import-Export, construction, investment management, IT, motor engineering and urban development. BIG brings world class advice, know-how, technology and finance to Ethiopia through the use of local talent and via collaboration with international partners.BIG is working in partnership with world-renowned companies to assemble vehicles such as LADA, BAW and BAIC. BIG represent VW/FAW and KAMAZ in Ethiopia; plus, it als represents Belarus Tractors, Kirovets Tractors, VIM Tractors and attachments and KLEVER attachments, this has allowed BAZRA to provide the best automotive and agricultural machinery products and services at the highest standards with international certification making it a world-class company operating in the African continent.",
     bannerDesc:
-      "bazra group is a fully etiopian owned Conpany that foucuses on value mazimi ans is a service oriented solution provider , estavlished in we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services we has been involved excludively in te areas ranging from enerpisie manifacturing sercives and business automatio intelligene to slmar i infranstructur and clud services",
+      "We; BAZRA INVESTMENT GROUP (BIG), are a group of companies doing business in areas of trading, Import-Export, construction, investment management, IT, motor engineering and urban development. BIG brings world class advice, know-how, technology and finance to Ethiopia through the use of local talent and via collaboration with international partners.BIG is working in partnership with world-renowned companies to assemble vehicles such as LADA, BAW and BAIC. BIG represent VW/FAW and KAMAZ in Ethiopia; plus, it als represents Belarus Tractors, Kirovets Tractors, VIM Tractors and attachments and KLEVER attachments, this has allowed BAZRA to provide the best automotive and agricultural machinery products and services at the highest standards with international certification making it a world-class company operating in the African continent.",
   },
 ];
 
@@ -165,7 +164,7 @@ export const overview = [
     id: 2,
     icon: <Settings />,
     title: "Founder",
-    Desc: "Founded by Dr. Yeyehyirad Asnake Bazra Group, based in Addis Ababa, Ethiopia",
+    Desc: "Founded by Dr. Yeyehyirad Asnake Bazra Investment Group, based in Addis Ababa, Ethiopia",
     cover: "../icon2.png",
   },
   {
@@ -204,42 +203,56 @@ export const service = [
     id: 1,
     icon: <Settings />,
     title: "Manifucturing",
-    Desc: "Bazra Group Manifucturing",
+    Desc: "Bazra Investment Group Manifucturing",
     cover: "../bz1.png",
   },
   {
     id: 2,
     icon: <CropRotate />,
     title: "Transport",
-    Desc: "Bazra Group Transport",
+    Desc: "Bazra Investment Group Transport",
     cover: "../bz1.png",
   },
   {
     id: 3,
     icon: <ViewInAr />,
     title: "Motor Vihecle Part",
-    Desc: "Bazra Group  Vihecle Part",
+    Desc: "Bazra Investment Group  Vihecle Part",
     cover: "../bz1.png",
   },
   {
     id: 4,
     icon: <PieChart />,
     title: "Import-Export",
-    Desc: "Bazra Group  Import-Export",
+    Desc: "Bazra Investment Group  Import-Export",
     cover: "../bz1.png",
   },
   {
     id: 5,
     icon: <Code />,
     title: "Motor Engineering",
-    Desc: "Bazra Group  Motor Engineering",
+    Desc: "Bazra Investment Group  Motor Engineering",
     cover: "../bz1.png",
   },
   {
-    id: 5,
+    id: 6,
     icon: <BarChart />,
     title: "Agriculture",
-    Desc: "Bazra Group Agriculture",
+    Desc: "Bazra Investment Group Agriculture",
+    cover: "../bz1.png",
+  },
+  {
+    id: 7,
+    icon: <BarChart />,
+    title: "Urban-Development",
+    Desc: "Bazra Investment Group UrbanDevelopment",
+    cover: "../bz1.png",
+  },
+  {
+    id: 8,
+    icon: <BarChart />,
+    title: "Logistics",
+    Desc: "Bazra Investment Group Logistics",
     cover: "../bz1.png",
   },
 ];
@@ -249,7 +262,7 @@ export const Banservice = [
     id: 1,
     icon: <Settings />,
     title: "",
-    Desc: "Bazra Group description in this About us bazra moters plc",
+    Desc: "Bazra Investment Group description in this About us Bazra Investment Group plc",
     cover: "../service12.png",
   },
 ];
@@ -260,7 +273,7 @@ export const counter = [
     icon: <CloudOutlined />,
     num: 900,
     title: "Happy Client",
-    Desc: "Bazra Motors description in this About us bazra moters plc",
+    Desc: "Bazra Motors description in this About us Bazra Investment Group plc",
     cover: "../bz1.png",
   },
   {
@@ -268,7 +281,7 @@ export const counter = [
     icon: <CropRotate />,
     num: 900,
     title: "Lada Cars",
-    Desc: "Bazra Motors description in this About us bazra moters plc",
+    Desc: "Bazra Motors description in this About us Bazra Investment Group plc",
     cover: "../bz1.png",
   },
   {
@@ -276,7 +289,7 @@ export const counter = [
     icon: <ViewInAr />,
     num: 900,
     title: "Employee",
-    Desc: "Bazra Motors description in this About us bazra moters plc",
+    Desc: "Bazra Motors description in this About us Bazra Investment Group plc",
     cover: "../bz1.png",
   },
   {
@@ -284,7 +297,7 @@ export const counter = [
     icon: <PieChart />,
     num: 100,
     title: "Sister Company",
-    Desc: "Bazra Motors description in this About us bazra moters plc",
+    Desc: "Bazra Motors description in this About us Bazra Investment Group plc",
     cover: "../bz1.png",
   },
 ];
@@ -396,8 +409,8 @@ export const contact = [
           target="_blank"
           rel="noopener noreferrer"
         >
-           Friendship Building, Africa Avenue        
-           </a>
+          Friendship Building, Africa Avenue
+        </a>
       </i>
     ),
   },
@@ -429,20 +442,17 @@ export const contact = [
       <a>
         <MdEmail />
         <a title="mail"
-          href="mailto:yayushaye@yahoo.com"
+          href="mailto:bazrainvestmentgroup@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         ></a>
       </a>
     ),
     text: (
-      <a>
-        {" "}
-        <a href="mailto:yayushaye@yahoo.com/" target="_blank" rel="noreferrer">
-          {" "}
-          yayushaye@yahoo.com
-        </a>{" "}
+      <a href="mailto:bazrainvestmentgroup@gmail.com/" target="_blank" rel="noreferrer" className="whitespace-normal overflow-ellipsis">
+        bazrainvestmentgroup@gmail.com
       </a>
+
     ),
   },
 ];
@@ -625,9 +635,9 @@ export const footer = [
       },
     ],
   },
-  
+
   {
-    
+
     title: "Social",
     text: [
       {
@@ -637,7 +647,7 @@ export const footer = [
             <i>
               <EmailOutlined />
             </i>{" "}
-            <a href="mailto:yayushaye@yahoo.com/" target="_blank" rel="noreferrer">
+            <a href="mailto:bazrainvestmentgroup@gmail.com/" target="_blank" rel="noreferrer">
               {" "}
               Email
             </a>{" "}
@@ -703,19 +713,19 @@ export const footer = [
     text: [
       {
         list: (
-            <a
-              href="https://maps.google.com?q=Friendship+Business+Center,+Airport+Rd,+Addis"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <b>
-                <i>
-                  <AddLocationAltOutlined />{" "}
-                </i>
-                Location
-              </b>{" "}
-              Friendship Building, Africa Avenue
-            </a>
+          <a
+            href="https://maps.google.com?q=Friendship+Business+Center,+Airport+Rd,+Addis"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <b>
+              <i>
+                <AddLocationAltOutlined />{" "}
+              </i>
+              Location
+            </b>{" "}
+            Friendship Building, Africa Avenue
+          </a>
         ),
       },
       {
@@ -738,8 +748,8 @@ export const footer = [
               <i>
                 <Public />
               </i>
-              House No:</b> {"5597/506, Worda 2, Sub-City Bole"} 
-            
+              House No:</b> {"5597/506, Worda 2, Sub-City Bole"}
+
           </a>
         ),
       },
@@ -766,7 +776,7 @@ export const footer = [
               <i>
                 <PhoneIphone />
               </i>
-              Tel:  
+              Tel:
             </b>
             + 251 116151212
           </a>
@@ -799,7 +809,7 @@ export const testimonials = [
     name: "Dr. Yayehyirad Asnake,",
     icon: [
       <a
-        href="mailto:yayushaye@yahoo.com"
+        href="mailto:bazrainvestmentgroup@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -890,7 +900,7 @@ export const blog = [
     date: <i> Date :2016:03:03</i>,
     icon: [
       <a
-        href="mailto:yayushaye@yahoo.com"
+        href="mailto:bazrainvestmentgroup@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -983,7 +993,7 @@ export const serviceData = [
     title: "Manifucturing",
     imageUrl: "../../../manif.jpg",
     description:
-      "Description for Service Bazra s identity lies innovation. Dive into our exploration of cutting-edge technologies, groundbreaking solutions, and the creative minds behind our most innovative projects.Employee Spotlight: Faces Behind Bazra s Success Meet the exceptional individuals contributing to Bazra s success. Our Employee Spotlight series highlights the talented and dedicated professionals making Bazra a vibrant and collaborative workplace.Sustainable Practices: Building a Better Tomorrow Sustainability is not just a buzzword at Bazra; it s a commitment. Explore our sustainable practices and initiatives aimed at making a positive impact on the environment and future generations.",
+      "BAZRA has a motor engineering company dedicated to automotive assembly and manufacturing.  ",
     websiteLink: "/contactpage",
   },
   {
@@ -993,7 +1003,7 @@ export const serviceData = [
     title: "Transport",
     imageUrl: "../../../serviceD/transprt.webp",
     description:
-      "Description for Service Bazra s identity lies innovation. Dive into our exploration of cutting-edge technologies, groundbreaking solutions, and the creative minds behind our most innovative projects.Employee Spotlight: Faces Behind Bazra s Success Meet the exceptional individuals contributing to Bazra s success. Our Employee Spotlight series highlights the talented and dedicated professionals making Bazra a vibrant and collaborative workplace.Sustainable Practices: Building a Better Tomorrow Sustainability is not just a buzzword at Bazra; it s a commitment. Explore our sustainable practices and initiatives aimed at making a positive impact on the environment and future generations.",
+      "BAZRA has initiated a surface transport company to ease the freight challenges of the nation. Meanwhile; we can provide inter-modal transportation services on rail, by air and sea keeping businesses to connect with international markets We are also an official customs agent who can provide customs clearance in Ethiopia.",
     websiteLink: "/contactpage",
   },
   {
@@ -1004,7 +1014,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/vichle part.jpg",
 
     description:
-      "Description for Service Bazra s identity lies innovation. Dive into our exploration of cutting-edge technologies, groundbreaking solutions, and the creative minds behind our most innovative projects.Employee Spotlight: Faces Behind Bazra s Success Meet the exceptional individuals contributing to Bazra s success. Our Employee Spotlight series highlights the talented and dedicated professionals making Bazra a vibrant and collaborative workplace.Sustainable Practices: Building a Better Tomorrow Sustainability is not just a buzzword at Bazra; it s a commitment. Explore our sustainable practices and initiatives aimed at making a positive impact on the environment and future generations.",
+      "BAZRA provides spare parts for the vehicles it assembles and represents.",
     websiteLink: "/contactpage",
   },
   {
@@ -1015,7 +1025,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/import-and-export.jpg",
 
     description:
-      "Description for Service Bazra s identity lies innovation. Dive into our exploration of cutting-edge technologies, groundbreaking solutions, and the creative minds behind our most innovative projects.Employee Spotlight: Faces Behind Bazra s Success Meet the exceptional individuals contributing to Bazra s success. Our Employee Spotlight series highlights the talented and dedicated professionals making Bazra a vibrant and collaborative workplace.Sustainable Practices: Building a Better Tomorrow Sustainability is not just a buzzword at Bazra; it s a commitment. Explore our sustainable practices and initiatives aimed at making a positive impact on the environment and future generations.",
+      "We; BAZRA, are a boutique business, trading, products sourcing, Import-Export company. BAZRA plays in commodities of all kind that are os crucial role in the development of economy. BAZRA is there in sourcing all kind of commodities from both Ethiopia to the world and from the any point in the glob to any other destination.  ",
     websiteLink: "/contactpage",
   },
   {
@@ -1026,7 +1036,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/Motor Engineering.jpg",
 
     description:
-      "Description for Service Bazra s identity lies innovation. Dive into our exploration of cutting-edge technologies, groundbreaking solutions, and the creative minds behind our most innovative projects.Employee Spotlight: Faces Behind Bazra s Success Meet the exceptional individuals contributing to Bazra s success. Our Employee Spotlight series highlights the talented and dedicated professionals making Bazra a vibrant and collaborative workplace.Sustainable Practices: Building a Better Tomorrow Sustainability is not just a buzzword at Bazra; it s a commitment. Explore our sustainable practices and initiatives aimed at making a positive impact on the environment and future generations.",
+      "BAZRA is one of Automotive Distributors and Manufacturers in Ethiopia, covering passenger cars and medium duty commercial vehicles and agricultural machineries. BAZRA MOTORS has an assembly facility in Kombolcha, 300kms away from Addis Ababa agreed to assemble LADA vehicles.",
     websiteLink: "/contactpage",
   },
   {
@@ -1037,7 +1047,29 @@ export const serviceData = [
     imageUrl: "../../../serviceD/Agriculture.jpg",
 
     description:
-      "Description for Service Bazra s identity lies innovation. Dive into our exploration of cutting-edge technologies, groundbreaking solutions, and the creative minds behind our most innovative projects.Employee Spotlight: Faces Behind Bazra s Success Meet the exceptional individuals contributing to Bazra s success. Our Employee Spotlight series highlights the talented and dedicated professionals making Bazra a vibrant and collaborative workplace.Sustainable Practices: Building a Better Tomorrow Sustainability is not just a buzzword at Bazra; it s a commitment. Explore our sustainable practices and initiatives aimed at making a positive impact on the environment and future generations.",
+      "BAZRA represent quite very bigger names in the world agricultural machinery and technology such as Belarus Tractors, Kirovets Tractors, VIM Tractors and implements, KLEVER implements and GEOMIR (AgroHistory) agricultural IT systems.",
+    websiteLink: "/contactpage",
+  },
+  {
+    id: 7,
+    icon: <Settings />,
+
+    title: "Urban-Development",
+    imageUrl: "../../../serviceD/urban.png",
+
+    description:
+      "BAZRA has an urban development wing working to develop cities in Ethiopia with the main focus in Arba-Minch, Bahir-Dar, Debre-Birhan, Dessie and Gonder. The urban development concepts are multiplied with the concepts of eco-SMART and TECHNOPOLIS concepts.",
+    websiteLink: "/contactpage",
+  },
+  {
+    id: 8,
+    icon: <Settings />,
+
+    title: "Logistics",
+    imageUrl: "../../../serviceD/logistics.jpg",
+
+    description:
+      "BAZRA has developed a Logistics and Transport platform which is completely automated system that outperforms the industry's conventional management systems and enables businesses and truck owners to take full control of their assets, cargo and engage actively in the business. The platform provides market, tracing and tracking tools, transport administration and management.",
     websiteLink: "/contactpage",
   },
 ];
@@ -1070,57 +1102,43 @@ export const Map = [
 
 export const products = [
   {
-    title: "AGGREGATES",
+    title: "IT",
     link: "/products/aggregates",
     image: "../../../IT.png",
     description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
+      "BAZRA’s IT wing is working both on its own capacity and with partners in the world of IT BAZRA is partnering with such big names in the industry as ALT4, FORTECOM, KASPERSKY, SAP LEONARDO, GEOMIR, MPP LABS, SOFTLINE and SOFTCLUB.  BAZRA has developed its own logistics management and payment platforms.",
   },
   {
-    title: "AGGREGATES",
+    title: "Manufacturing",
     link: "/products/aggregates",
     image: "../../../manif.jpg",
     description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
+      "BAZRA has a motor engineering company dedicated to automotive assembly and manufacturing.",
   },
   {
-    title: "AGGREGATES",
+    title: "Motor Engineering",
     link: "/products/aggregates",
     image: "../../../lada3.jpeg",
     description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
+      "BAZRA is one of Automotive Distributors and Manufacturers in Ethiopia, covering passenger cars and medium duty commercial vehicles and agricultural machineries. BAZRA MOTORS has an assembly facility in Kombolcha, 300kms away from Addis Ababa agreed to assemble LADA vehicles.",
   },
   {
-    title: "AGGREGATES",
+    title: "Construction",
     link: "/products/aggregates",
     image: "../../../lada.jpeg",
 
     description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
+      "BAZRA has a construction wing working in the steadily expanding construction sector; which is a grade I building company that works hard to advance the civil construction industry.",
   },
   {
-    title: "AGGREGATES",
+    title: "Urban Development ",
     link: "/products/aggregates",
     image: "../../../lada0.jpeg",
 
     description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
+      "BAZRA has an urban development wing working to develop cities in Ethiopia with the main focus in Arba-Minch, Bahir-Dar, Debre-Birhan, Dessie and Gonder. The urban development concepts are multiplied with the concepts of eco-SMART and TECHNOPOLIS concepts.",
   },
 
-  {
-    title: "AGGREGATES",
-    link: "/products/aggregates",
-    image: "../../../lada1.jpeg",
-    description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
-  },
-  {
-    title: "AGGREGATES",
-    link: "/products/aggregates",
-    image: "../../../lada2.jpeg",
-    description:
-      "Aggregates are an engineered granular material consisting of crushed stone, gravel, and sand of varying minerologies.",
-  },
 
   // Add more product objects similarly
 ];
@@ -1139,3 +1157,106 @@ export const images = [
   { src: '../../../gallary/classic_22_672.webp', name: 'lada', role: 'granta' },
 
 ];
+
+export const partner = [
+
+  {
+    category: "Automotive and Agricultural ",
+    images: "../partnership/university.png",
+    partners: [
+      {
+        "image_src": "../partnership/autoagri/avtovaz.JPG"
+      },
+      {
+        "image_src": "../partnership/autoagri/baic.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/baw.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/belarus.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/faw.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/kamaz.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/kirovets.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/klever.png"
+      },
+      {
+        "image_src": "../partnership/autoagri/uaz.png"
+      },
+     
+
+    ]
+  },
+  {
+    category: "Chemicals and Fertilizers",
+    images: "../partnership/university.png",
+    partners: [
+      {
+        "image_src": "../partnership/chemica&feltrizer/keystone.png"
+      },
+      {
+        "image_src": "../partnership/chemica&feltrizer/tralexcargo.png"
+      },
+      {
+        "image_src": "../partnership/chemica&feltrizer/vim.png"
+      },
+      
+
+    ]
+  }
+  ,
+  {
+    category: "Financial Sectors",
+    images: "../partnership/financelogo.png",
+    partners: [
+      {
+        "image_src": "../partnership/finance/brics.jpg"
+      },
+      {
+        "image_src": "../partnership/finance/ebcc.jpg"
+      },
+      {
+        "image_src": "../partnership/finance/komutet.png"
+      },
+      
+
+    ]
+  },
+  {
+    category: "Technology (IT)",
+    images: "../partnership/financelogo.png",
+    partners: [
+      {
+        "image_src": "../partnership/IT/fortecom.png"
+      },
+      {
+        "image_src": "../partnership/IT/kaspersky.png"
+      },
+      {
+        "image_src": "../partnership/IT/softclub.png"
+      },
+      {
+        "image_src": "../partnership/IT/mpplabs.jpg"
+      },
+      {
+        "image_src": "../partnership/IT/sap.jpg"
+      },
+      {
+        "image_src": "../partnership/IT/softline.png"
+      },
+      {
+        "image_src": "../partnership/IT/gs.png"
+      },
+      
+
+    ]
+  },
+]
