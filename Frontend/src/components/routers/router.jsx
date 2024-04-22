@@ -196,7 +196,7 @@ const router = createBrowserRouter([
       {
         path: "/admin/dashboard/edit-service/:id",
         element: <EditService />,
-        // loader: ({params})=>fetch(`http://localhost:8000/bzoverview/${params.id}`)
+        // loader: ({params})=>fetch(`https://bazra.onrender.com/bzoverview/${params.id}`)
       },
       //slider cars in gallery
 
@@ -211,7 +211,7 @@ const router = createBrowserRouter([
       {
         path: "/admin/dashboard/edit-cargallery_slide/:id",
         element: <EditGallery />,
-        // loader: ({params})=>fetch(`http://localhost:8000/bzoverview/${params.id}`)
+        // loader: ({params})=>fetch(`https://bazra.onrender.com/bzoverview/${params.id}`)
       },
 
       // counter to manage

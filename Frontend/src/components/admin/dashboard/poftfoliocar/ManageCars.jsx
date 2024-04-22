@@ -12,7 +12,7 @@ function ManageCars() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:8000/allcars")
+    fetch("https://bazra.onrender.com/allcars")
       .then((res) => res.json())
       .then((data) => setCars(data));
   }, []);
@@ -121,7 +121,7 @@ function ManageCars() {
                 <td className="text-center">{item.category}</td>
                 <td className="text-center">
                   <img
-                    src={`http://localhost:8000/portfoliocar/${item.image}`}
+                    src={`https://bazra.onrender.com/portfoliocar/${item.image}`}
                     alt=""
                     className="mx-auto block max-w-[60px]"
                   />

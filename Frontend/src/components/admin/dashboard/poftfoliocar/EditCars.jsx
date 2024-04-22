@@ -6,7 +6,7 @@ function EditCars() {
   const {id} = useParams();
   const navigate = useNavigate(); // Create a navigate function
   const [cars, setCars] = useState({ name: '', category: '', description: '', price: '', image: '',engine:'',colors:'',model:'',fuel_consumption:'' });
-  const [imagePreview, setImagePreview] = useState(cars.image ? `http://localhost:8000/portfoliocar/${cars.image}` : null);
+  const [imagePreview, setImagePreview] = useState(cars.image ? `https://bazra.onrender.com/portfoliocar/${cars.image}` : null);
 
   const { name, category, image, description, price,engine,colors,model,fuel_consumption } = useLoaderData();
   
@@ -16,13 +16,13 @@ function EditCars() {
 
   useEffect(() => {
     // Fetch the banner data based on the ID when the component mounts
-    fetch(`http://localhost:8000/allcars/${id}`)
+    fetch(`https://bazra.onrender.com/allcars/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setCars(data);
         // Set the initial image preview if a default value exists
         if (data.image) {
-          setImagePreview(`http://localhost:8000/portfoliocar/${data.image}`);
+          setImagePreview(`https://bazra.onrender.com/portfoliocar/${data.image}`);
         }
       })
       .catch((error) => console.error('Error fetching portfolio data:', error));
@@ -80,7 +80,7 @@ function EditCars() {
     }
   
     // Make fetch request
-    fetch(`http://localhost:8000/updatecars/${id}`, {
+    fetch(`https://bazra.onrender.com/updatecars/${id}`, {
       method: 'PATCH',
       body: formData, // Use FormData instead of JSON.stringify
     })

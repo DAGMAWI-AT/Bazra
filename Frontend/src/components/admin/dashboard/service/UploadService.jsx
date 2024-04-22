@@ -39,7 +39,7 @@ const UploadService = () => {
   //   serviceManagerData.append('imageFiles', formData.imageFiles);
 
   //   // Make a POST request to your server to handle the upload
-  //   fetch('http://localhost:8000/uploadservice', {
+  //   fetch('https://bazra.onrender.com/uploadservice', {
   //     method: 'POST',
   //     body: serviceManagerData,
   //   })

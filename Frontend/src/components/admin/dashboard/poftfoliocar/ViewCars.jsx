@@ -24,7 +24,7 @@ function ViewCars() {
     <div className="text-center car-details-container">
       <h2 className="car-details-title">Car Details</h2>
       <div className="car-image-container">
-        <img src={`http://localhost:8000/portfoliocar/${car.image}`} alt="" className="car-image" />
+        <img src={`https://bazra.onrender.com/portfoliocar/${car.image}`} alt="" className="car-image" />
       </div>
 
       <div className="car-info">

@@ -51,7 +51,7 @@ function Uplodcar() {
       formData.append("image", imageFile);
     }
 
-    fetch("http://localhost:8000/addcars", {
+    fetch("https://bazra.onrender.com/addcars", {
       method: "POST",
       body: formData,
     })

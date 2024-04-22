@@ -24,7 +24,7 @@ const Portfolio = () => {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:8000/allcars")
+    fetch("https://bazra.onrender.com/allcars")
       .then((res) => res.json())
       .then((data) => {
         setCars(data);
@@ -85,7 +85,7 @@ const Portfolio = () => {
                 <div className="img">
 
                   <img
-                    src={`http://localhost:8000/portfoliocar/${item.image}`}
+                    src={`https://bazra.onrender.com/portfoliocar/${item.image}`}
                     alt={item.name}
                   />
                 </div>

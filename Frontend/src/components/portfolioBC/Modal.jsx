@@ -18,7 +18,7 @@ const Modal = ({ item, onClose }) => {
           <div className="modal-container">
             <div className="modal-image">
               <img className="w-full h-full"
-                src={`http://localhost:8000/portfoliocar/${item.image}`}
+                src={`https://bazra.onrender.com/portfoliocar/${item.image}`}
                 alt={item.name}
               />
             </div>
