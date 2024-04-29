@@ -51,15 +51,15 @@ export const nav = [
     text: "News",
     path: "/blog",
   },
-
-  {
-    text: "Contact",
-    path: "/contact",
-  },
   {
     text: "Tender",
     path: "/tenders",
   },
+  {
+    text: "Contact",
+    path: "/contact",
+  },
+  
   {
     // text: "Admin",
     path: "/admin/dashboard",

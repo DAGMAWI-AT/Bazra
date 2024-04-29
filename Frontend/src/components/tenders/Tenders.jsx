@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Tenders = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
   const truncateDescription = (description, maxLength) => {
     if (description.length > maxLength) {
       return description.substring(0, maxLength) + "...";
@@ -14,16 +18,16 @@ const Tenders = () => {
     "ባዛሪ ኢንቭስተመንት ቦታ ተብሏል ለድምፅ መኪናዎችና በእንቅስቃሴ ከተማ ላይ የሚኖረውን የማሽን እና የምናያት መንገዶችን በመስመር አስተዳደር የሚረዳውን ጥቅም የሚሰጠውን ተልዕኮ ይጠቀሙ:የመኪናዎች ማስተላለፊያ: የበእንቅስቃሴ ከተማ የሚኖረውን መኪናዎችን እና የህንፃ መኪናዎችን መሳሪያ እንዲሆን እና እንቅስቃሴ ከፍተኛ ከሆነ የአስተማሪ ዓይነትን በማስጠንቀቅ ያሳያል።ዋጋ ያለው መኪና አስተማሪ: ባዛሪ እቃዎችን ለማስከበር ከፍተኛ መኪና ዋጋ ያለውን ከሆነ የመኪና አስተማሪ ማሽን እና የተነሳ ዋጋ በማስጠንቀቅ ያሳያል።የአውቶሞቢል እናማርኛ: ማሽንና ከሆነ ተነሳ እና ማሽንን እና አውቶሞቢል አካላትን ለማስከበር ከፍተኛ መኪና የሚኖር እና ማሽን አስተማሪ ማሽንና እና አካባቢዎችን በማስጠንቀቅ ያሳያል።";
 
   return (
-    <section className=" bg-gray-800 bg-opacity-70 p-2">
-      <div className="m-1 bg-gray-800 bg-opacity-50 ">
-        <div className="bg-gray-800 p-4 mt-48 bg-opacity-50">
-          <h1 className="text-3xl font-bold text-black">Tenders</h1>
+    <section className=" bg-gray-800  bg-opacity-70 p-2">
+      <div className=" bg-gray-900 bg-opacity-20 ">
+      <div className="bg-gray-800 bg-opacity-50 p-4 mt-20">
+          <h1 className="text-3xl font-bold text-yellow-800">Tenders</h1>
           <p className="text-gray-100">
             This list contains free tenders. You don't need to create an account
             to read them.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-4 mb-10 p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-10 p-4">
           <div className="bg-white border border-yellow-900 shadow-lg rounded p-4 bg-opacity-80 relative">
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
