@@ -17,14 +17,14 @@ const Modal = ({ item, onClose }) => {
         {item && (
           <div className="modal-container">
             <div className="modal-image">
-              <img className="w-full h-full"
+              <img className="w-full max-h-full max-w-full"
                 src={`https://bazra.onrender.com/portfoliocar/${item.image}`}
                 alt={item.name}
               />
             </div>
-            <div className="modal-details">
+            <div className="modal-details text-black">
               <h2>{item.name}</h2>
-              <p><strong>Model:</strong> {item.model}</p>
+              <p className="text-gray-800"><strong>Model:</strong> {item.model}</p>
               <p>
                 <strong>Category:</strong> {item.category}
               </p>
@@ -37,10 +37,9 @@ const Modal = ({ item, onClose }) => {
               <p>
                 <strong>Fuel:</strong> {item.fuel_consumption}
               </p>
-              <p>
+              <p className="text-black">
                 <strong>Description:</strong> {item.description}
               </p>
-              {/* Add any other details you want to display */}
             </div>
           </div>
         )}

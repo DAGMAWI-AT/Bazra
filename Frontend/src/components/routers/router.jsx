@@ -62,6 +62,7 @@ import Login from "../admin/Login";
 import Logout from "../admin/Logout";
 import Users from "../admin/dashboard/createUsers/Users";
 import Partnership from "../partnership/Partnership";
+import Tenders from "../tenders/Tenders";
 
 const router = createBrowserRouter([
   {
@@ -95,6 +96,10 @@ const router = createBrowserRouter([
       {
         path: "/blog/singlepost/:id",
         element: <Singlepost />,
+      },
+      {
+        path: "/Tenders",
+        element: <Tenders/>,
       },
       {
         path: "/Contact",

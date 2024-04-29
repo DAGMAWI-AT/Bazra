@@ -57,9 +57,14 @@ export const nav = [
     path: "/contact",
   },
   {
+    text: "Tender",
+    path: "/tenders",
+  },
+  {
     // text: "Admin",
     path: "/admin/dashboard",
   },
+  
 ];
 
 export const home = [
@@ -1235,7 +1240,8 @@ export const partner = [
     images: "../partnership/financelogo.png",
     partners: [
       {
-        "image_src": "../partnership/IT/fortecom.png"
+        "image_src": "../partnership/IT/fortecom.png",
+        description:" description"
       },
       {
         "image_src": "../partnership/IT/kaspersky.png"
