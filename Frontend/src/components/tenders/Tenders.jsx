@@ -20,7 +20,7 @@ const Tenders = () => {
   return (
     <section className=" bg-gray-800  bg-opacity-70 p-2">
       <div className=" bg-gray-900 bg-opacity-20 ">
-      <div className="bg-gray-800 bg-opacity-50 p-4 mt-20">
+      <div className=" p-4 mt-20">
           <h1 className="text-3xl font-bold text-yellow-800">Tenders</h1>
           <p className="text-gray-100">
             This list contains free tenders. You don't need to create an account
