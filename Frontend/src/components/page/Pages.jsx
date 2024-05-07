@@ -15,6 +15,7 @@ import Servicepage from "../services/Servicepage"
 import ReactGA from 'react-ga';
 import Partnership from "../partnership/Partnership"
 import Tenders from "../tenders/Tenders"
+import TendersPage from "../tenders/TendersPage"
 const Pages = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -42,6 +43,8 @@ const Pages = () => {
           <Route exact path='/contact' component={Contact} />  
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/tenders' component={Tenders} />
+          <Route exact path='/tenderspage' component={TendersPage} />
+
           <Route path="/blog/singlepost/:id"  component={Singlepost} key={Route.path} />
           <Route path="/blog/singlepost/"  component={Singlepost} key={Route.path} />
         </Routes>     

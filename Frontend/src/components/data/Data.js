@@ -624,15 +624,24 @@ export const footer = [
         list: (
           <Link to="/blog">
             <a href="/blog">
-              <b>Blogs</b>
+              <b>News</b>
             </a>
           </Link>
         ),
       },
       {
         list: (
-          <Link to="/contactpage">
-            <a href="/contactpage">
+          <Link to="/tenders">
+            <a href="/tenders">
+              <b>Tenders</b>
+            </a>
+          </Link>
+        ),
+      },
+      {
+        list: (
+          <Link to="/contact">
+            <a href="/contact">
               <b>Contacts</b>
             </a>
           </Link>

@@ -63,6 +63,7 @@ import Logout from "../admin/Logout";
 import Users from "../admin/dashboard/createUsers/Users";
 import Partnership from "../partnership/Partnership";
 import Tenders from "../tenders/Tenders";
+import TendersPage from "../tenders/TendersPage";
 
 const router = createBrowserRouter([
   {
@@ -100,6 +101,10 @@ const router = createBrowserRouter([
       {
         path: "/Tenders",
         element: <Tenders/>,
+      },
+      {
+        path: "/TendersPage",
+        element: <TendersPage/>,
       },
       {
         path: "/Contact",
