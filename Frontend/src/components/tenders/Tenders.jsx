@@ -74,12 +74,12 @@ const Tenders = () => {
                     Price: free
                   </span>
                   <div className="ml-2">
-                    <button
+                    {/* <button
                       className="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs py-1 px-3 rounded"
                       style={{ whiteSpace: "nowrap" }}
                     >
                       Download
-                    </button>
+                    </button> */}
                     <br />
                     <div className="text-sm text-gray-600">
                       <div className="text-xs">
@@ -146,12 +146,12 @@ const Tenders = () => {
                     Price: free
                   </span>
                   <div className="ml-2">
-                    <button
+                    {/* <button
                       className="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs py-1 px-3 rounded"
                       style={{ whiteSpace: "nowrap" }}
                     >
                       Download
-                    </button>
+                    </button> */}
                     <br />
                     <div className="text-sm text-gray-600">
                       <div className="text-xs">
@@ -215,12 +215,12 @@ const Tenders = () => {
                     Price: free
                   </span>
                   <div className="ml-2">
-                    <button
+                    {/* <button
                       className="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs py-1 px-3 rounded"
                       style={{ whiteSpace: "nowrap" }}
                     >
                       Download
-                    </button>
+                    </button> */}
                     <br />
                     <div className="text-sm text-gray-600">
                       <div className="text-xs">
@@ -284,12 +284,12 @@ const Tenders = () => {
                     Price: free
                   </span>
                   <div className="ml-2">
-                    <button
+                    {/* <button
                       className="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs py-1 px-3 rounded"
                       style={{ whiteSpace: "nowrap" }}
                     >
                       Download
-                    </button>
+                    </button> */}
                     <br />
                     <div className="text-sm text-gray-600">
                       <div className="text-xs">

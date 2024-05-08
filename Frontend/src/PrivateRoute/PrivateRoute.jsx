@@ -19,7 +19,7 @@ const PrivateRoute = ({children}) => {
           }}
         >
           <div className='text-center'>
-            <Spinner aria-label='center-aligned spinner example' />
+            <Spinner aria-label='center-aligned spinner' />
           </div>
         </div>
       );
