@@ -75,6 +75,8 @@ export default function ContactForm() {
         <div className="form-group">
           <label htmlFor="name">
              Name
+             </label>
+
             <input
               type="text"
               id="name"
@@ -82,11 +84,11 @@ export default function ContactForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-          </label>
         </div>
         <div className="form-group">
           <label htmlFor="email">
              Email
+             </label>
             <input
               type="email"
               id="email"
@@ -94,19 +96,21 @@ export default function ContactForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-          </label>
+          
         </div>
         <div className="form-group">
           <label htmlFor="message">
-             message
+             Message
+             </label>
             <textarea
               type="text"
               id="message"
               name="message"
               value={message}
+              className="text-black"
               onChange={(e) => setMessage(e.target.value)}
             />
-          </label>
+          
         </div>
         <button type="submit">Send</button>
       </FormStyle>

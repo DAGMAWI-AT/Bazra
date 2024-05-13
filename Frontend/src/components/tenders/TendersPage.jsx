@@ -1,68 +1,120 @@
-import React from 'react';
+import React, { useEffect } from "react";
 
 const TendersPage = () => {
-    
-    return (
-        <div className="col-md-9 col-sm-12 main-content">
-            <div>
-                <div className="flex justify-center mx-auto mb-20 border border-gray-300 h-62 max-h-80">
-                    <ins data-revive-zoneid="6" data-revive-target="_blank" data-revive-block="1" data-revive-blockcampaign="1" data-revive-id="9177ff5e1eae94e340912cb4ccc60e6f" data-revive-seq="0" id="revive-0-0" data-revive-loaded="1" style={{ textDecoration: "none" }}>
-                        <img src="https://r.2merkato.com/images/361c72170d206c766bd7b8065d026192.gif" width="400" height="70" alt="" title="" border="0" />
-                        <div id="beacon_342f7c46ba" style={{ position: "absolute", left: "0px", top: "0px", visibility: "hidden" }}>
-                            <img src="https://r.2merkato.com/delivery/lg.php?bannerid=83&amp;campaignid=78&amp;zoneid=6&amp;loc=https%3A%2F%2Ftender.2merkato.com%2Ftenders%2F661fe7ddb1b26f6b753a8ce0&amp;referer=https%3A%2F%2Ftender.2merkato.com%2Ftenders%2Ffree&amp;cb=342f7c46ba" width="0" height="0" alt="" style={{ width: "0px", height: "0px" }} />
-                        </div>
-                       
-                    </ins>
-                </div>
-            </div>
-            <section>
-                <h4>በአዲስ አበባ ከተማ አስተዳደር የመሬት ልማትና አስተዳደር ቢሮ በአራዳ ክ/ከተማ አድዋ ድል መታሰቢያ ሙዚየም አካባቢ በኮሪደር ልማት ምክንያት የጸዱ ቦታዎችን ጨምሮ፣ በንፋስ ስልክ ላፍቶ፣ በኮልፌ ቀራንዮ፣ በአቃቂ ቃሊቲ፣ በየካ፣ በቦሌ፣ በአዲስ ከተማ፣ በቂርቆስ፣ በጉለሌ፣ እና በልደታ ክ/ከተሞች የሚገኙ ለተለያዩ አገልግሎቶች የተዘጋጁ የልማት ቦታዎችን በጨረታ አወዳድሮ በሊዝ ለማስተላለፍ ይፈልጋል።
-                    (ጥብቅ ማሳሰቢያ- ዶክመንት የሚገዛው ግለሰብ ወይም ድርጅት በመጀመሪያ በስሙ ወይም በህጋዊ ተወካይ አማካኝነት ቴሌ ብር አካውንት መክፈት ይኖርበታል!!)</h4>
-                <hr className="my-2" />
-                <div className="btn-group" role="group">
-                    <a href="/tenders/661fe7ddb1b26f6b753a8ce0/print" target="_blank" className="btn btn-sm btn-outline-secondary btn-print">
-                        <i className="bi bi-printer me-2"></i> Print
-                    </a>
-                    <button type="button" className="btn btn-sm btn-outline-secondary btn-fullscreen">
-                        <i className="bi bi-arrows-fullscreen me-2"></i> Fullscreen
-                    </button>
-                </div>
-                <hr className="my-2" />
-                <div className="row">
-                    <div className="col-md-7 mb-3">
-                        <div className="tender-detail-outer">
-                            <div className="tender-detail-label">Bid closing date</div>
-                            <div className="tender-detail-value">
-                                <div>ሚያዝያ 24/2014 እ.ኤ. (May 3, 2022)</div>
-                            </div>
-                        </div>
-                        <div className="tender-detail-outer">
-                            <div className="tender-detail-label">Bid opening date</div>
-                            <div className="tender-detail-value">
-                                <div>ሚያዝያ 24/2014 እ.ኤ. (May 3, 2022)</div>
-                            </div>
-                        </div>
-                        {/* Add more tender details as needed */}
-                    </div>
-                    <div className="col-md-5">
-                        <div className="tender-detail-outer">
-                            <div className="tender-detail-label">Tender number</div>
-                            <div className="tender-detail-value">
-                                <div>661fe7ddb1b26f6b753a8ce0</div>
-                            </div>
-                        </div>
-                        <div className="tender-detail-outer">
-                            <div className="tender-detail-label">Issued by</div>
-                            <div className="tender-detail-value">
-                                <div>አንደኛ ገበያ</div>
-                            </div>
-                        </div>
-                        {/* Add more tender details as needed */}
-                    </div>
-                </div>
-            </section>
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+  return (
+    <div className="col-md-9 col-sm-12 main-content mt-20">
+      <div>
+        <div className="flex justify-center bg-gray-500 bg-transparent shadow-md shadow-gray-700 mb-20 border border-gray-300 h-62 max-h-80 m-2">
+          <img
+            src="../../../bz.png"
+            width="100"
+            height="100"
+            alt=""
+            title=""
+            border="0"
+          />
         </div>
-    );
-}
+      </div>
+      <section className="m-4 md:m-10 lg:m-20">
+        <h4>
+          ባዛሪ ኢንቭስተመንት ቦታ ተብሏል ለድምፅ መኪናዎችና በእንቅስቃሴ ከተማ ላይ የሚኖረውን የማሽን እና የምናያት
+          መንገዶችን በመስመር አስተዳደር የሚረዳውን ጥቅም የሚሰጠውን ተልዕኮ ይጠቀሙ:የመኪናዎች ማስተላለፊያ:
+          የበእንቅስቃሴ ከተማ የሚኖረውን መኪናዎችን እና የህንፃ መኪናዎችን መሳሪያ እንዲሆን እና እንቅስቃሴ ከፍተኛ
+          ከሆነ የአስተማሪ ዓይነትን በማስጠንቀቅ ያሳያል።ዋጋ ያለው መኪና አስተማሪ: ባዛሪ እቃዎችን ለማስከበር ከፍተኛ
+          መኪና ዋጋ ያለውን ከሆነ የመኪና አስተማሪ ማሽን እና የተነሳ ዋጋ በማስጠንቀቅ ያሳያል።የአውቶሞቢል እናማርኛ:
+          ማሽንና ከሆነ ተነሳ እና ማሽንን እና አውቶሞቢል አካላትን ለማስከበር ከፍተኛ መኪና የሚኖር እና ማሽን አስተማሪ
+          ማሽንና እና አካባቢዎችን በማስጠንቀቅ ያሳያል።)
+        </h4>
+        <div>
+          <a
+            href="/tenders/661fe7ddb1b26f6b753a8ce0/print"
+            target="_blank"
+            className="btn btn-sm btn-outline-secondary btn-print"
+          >
+            <i className="bi bi-printer me-2"></i> Print
+          </a>
+          {/* <button type="button" className="btn btn-sm btn-outline-secondary btn-fullscreen">
+                        <i className="bi bi-arrows-fullscreen me-2"></i> Fullscreen
+                    </button> */}
+        </div>
+        <hr />
+        <div className="row">
+          <div className="flex flex-col  lg:flex-row md:flex-col sm:flex-col justify-between mb-6 items-center mt-2 ">
+            <div className="p-1 mb-4">
+              <span className="text-md text-gray-600 ">
+                <p>
+                  <b className="text-white pr-10">Bid closing date:</b>ሚያዝያ
+                  24/2016 ዓ.ም ከቀኑ 11፡30 ሰዓት ድረስ
+                </p>
+              </span>
+              <hr />
+              <span className="text-sm text-gray-600">
+                <p>
+                  <b className="text-white pr-10">Bid opening date:</b> ሚያዚያ
+                  28/2016 ዓ.ም ከጠዋቱ 3፡00 ሰዓት ጀምሮ
+                </p>
+              </span>
+              <hr />
+              <span className="text-sm text-gray-600">
+                <p>
+                  <b className="text-white pr-10">Published on:</b> The Reporter
+                  (Apr 27, 2024)
+                </p>
+              </span>
+              <hr />
+              <span className="text-sm text-gray-600">
+                <p>
+                  <b className="text-white pr-10">Place:</b> Addis Ababa
+                </p>
+              </span>
+            </div>
+            <div className="border border-gray-300 shadow-lg rounded p-4 lg:ml-80">
+              <h2 className="text-lg font-semibold text-white">
+                Tender Documents
+              </h2>
+              <hr className="bg-white opacity-200" />
+              <div className="flex items-center mt-2">
+                <span className="text-sm ml-2 text-gray-600">
+                  Price: ETB 2,300
+                </span>
+                <button
+                  className="bg-blue-500 hover:bg-blue-600 text-white font-semibold text-xs py-1 px-3 rounded"
+                  style={{ whiteSpace: "nowrap" }}
+                >
+                  Buy Now
+                </button>
+              </div>
+              <hr />
+              <div className="flex items-center mt-2">
+                <span className="text-sm ml-2 text-gray-600">Price: free</span>
+                <div className="ml-2">
+                  <br />
+                  <div className="text-sm text-gray-600">
+                    <div className="text-xs">
+                      File size: <span>36 KB</span>
+                    </div>{" "}
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+
+          <div className="col-md-8">
+            <h2 className="text-center font-extrabold mb-4">ማስታወቂያ</h2>
+            <hr />
+
+            <div className="flex justify-center shadow-md shadow-gray-800 bg-white bg-opacity-80 mt-6   max-h-85 m-2">
+              <img className="p-10 " src="../../../tender.jpeg" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
 
 export default TendersPage;

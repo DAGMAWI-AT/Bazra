@@ -1,10 +1,23 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 const Tenders = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-      }, []);
-    
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const Navigate = useNavigate();
+
+  const handleDoubleClick = () => {
+    Navigate("/tenderspage");
+  };
+  const [clicked, setClicked] = useState(false);
+
+  const handleSingleClick = () => {
+    if (!clicked) {
+      // Redirect on single click if not already clicked
+      window.location.href = "/tenderspage";
+    }
+  };
   const truncateDescription = (description, maxLength) => {
     if (description.length > maxLength) {
       return description.substring(0, maxLength) + "...";
@@ -20,7 +33,7 @@ const Tenders = () => {
   return (
     <section className=" bg-gray-800  bg-opacity-70 p-2">
       <div className=" bg-gray-900 bg-opacity-20 ">
-      <div className=" p-4 mt-20">
+        <div className=" p-4 mt-20">
           <h1 className="text-3xl font-bold text-yellow-800">Tenders</h1>
           <p className="text-gray-100">
             This list contains free tenders. You don't need to create an account
@@ -28,7 +41,7 @@ const Tenders = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-10 p-4">
-          <div className="bg-white border border-yellow-900 shadow-lg rounded p-4 bg-opacity-80 relative">
+          <div className="bg-white border border-yellow-900 shadow-lg rounded p-4 bg-opacity-80 relative" onClick={handleDoubleClick}>
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
@@ -91,14 +104,18 @@ const Tenders = () => {
                 <hr />
               </div>
             </div>
-            <div className="mt-4">
-              <a href="#" className="text-blue-600">
+            <div className="mt-4" onClick={handleSingleClick}>
+              <a
+                href="#"
+                className="text-blue-600"
+                onClick={(e) => e.preventDefault()}
+              >
                 Show Details
               </a>
             </div>
           </div>
 
-          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative">
+          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" onClick={handleDoubleClick}>
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
@@ -163,13 +180,17 @@ const Tenders = () => {
                 <hr />
               </div>
             </div>
-            <div className="mt-4">
-              <a href="#" className="text-blue-600">
+            <div className="mt-4" onClick={handleSingleClick}>
+              <a
+                href="#"
+                className="text-blue-600"
+                onClick={(e) => e.preventDefault()}
+              >
                 Show Details
               </a>
             </div>
           </div>
-          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative">
+          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" onClick={handleDoubleClick}>
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
@@ -232,13 +253,17 @@ const Tenders = () => {
                 <hr />
               </div>
             </div>
-            <div className="mt-4">
-              <a href="#" className="text-blue-600">
+            <div className="mt-4" onClick={handleSingleClick}>
+              <a
+                href="#"
+                className="text-blue-600"
+                onClick={(e) => e.preventDefault()}
+              >
                 Show Details
               </a>
             </div>
           </div>
-          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative">
+          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" onClick={handleDoubleClick}>
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
@@ -301,8 +326,12 @@ const Tenders = () => {
                 <hr />
               </div>
             </div>
-            <div className="mt-4">
-              <a href="#" className="text-blue-600">
+            <div className="mt-4" onClick={handleSingleClick}>
+              <a
+                href="#"
+                className="text-blue-600"
+                onClick={(e) => e.preventDefault()}
+              >
                 Show Details
               </a>
             </div>
