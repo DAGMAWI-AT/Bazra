@@ -22,7 +22,7 @@ const Modal = ({ item, onClose }) => {
                 alt={item.name}
               />
             </div>
-            <div className="modal-details text-black">
+            <div className="modal-details text-black pb-10">
               <h2>{item.name}</h2>
               <p className="text-gray-800"><strong>Model:</strong> {item.model}</p>
               <p>
@@ -37,7 +37,7 @@ const Modal = ({ item, onClose }) => {
               <p>
                 <strong>Fuel:</strong> {item.fuel_consumption}
               </p>
-              <p className="text-black">
+              <p className="text-black pb-10">
                 <strong>Description:</strong> {item.description}
               </p>
             </div>

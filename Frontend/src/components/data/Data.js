@@ -18,6 +18,8 @@ import {
   Twitter,
   Instagram,
   YouTube,
+  FaxOutlined,
+  HouseSidingOutlined,
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -680,19 +682,7 @@ export const footer = [
           </a>
         ),
       },
-      {
-        list: (
-          <a>
-            <i>
-              <FontAwesomeIcon icon={faXTwitter} />
-            </i>{" "}
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
-              {" "}
-              Twitter
-            </a>{" "}
-          </a>
-        ),
-      },
+     
       {
         list: (
           <a>
@@ -709,14 +699,27 @@ export const footer = [
         list: (
           <a>
             <i>
+              <FontAwesomeIcon icon={faXTwitter} />
+            </i>
+            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+            <span>Twitter</span>
+            </a>
+          </a>
+        ),
+      },
+      {
+        list: (
+          <a>
+            <i>
               <FontAwesomeIcon icon={faLinkedin} />
             </i>{" "}
             <a
               href="https://www.linkedin.com/in/"
               target="_blank" rel="noreferrer"
             >
-              Linkdin
-            </a>{" "}
+            <span>Linkdin </span>
+
+            </a>
           </a>
         ),
       },
@@ -732,38 +735,31 @@ export const footer = [
             target="_blank"
             rel="noopener noreferrer"
           >
-            <b>
-              <i>
-                <AddLocationAltOutlined />{" "}
-              </i>
-              Location
-            </b>{" "}
-            Friendship Building, Africa Avenue
+            <i><AddLocationAltOutlined /></i>
+            <span>
+              <b>Location: </b>Friendship Building, Africa Avenue
+            </span>
+          </a>
+        ),
+      
+      },
+      {
+        list: (
+          <a>
+           <i><Public /></i> 
+            <span>
+              <b>Office No: </b>506, Fifth Floor
+            </span>
           </a>
         ),
       },
       {
         list: (
           <a>
-            <b>
-              <i>
-                <Public />
-              </i>
-              Office No: {""}
-            </b>{" "}
-            506, Fifth Floor,
-          </a>
-        ),
-      },
-      {
-        list: (
-          <a>
-            <b>
-              <i>
-                <Public />
-              </i>
-              House No:</b> {"5597/506, Worda 2, Sub-City Bole"}
-
+            <i><HouseSidingOutlined /></i>
+            <span>
+              <b>House No: </b>5597/506, Worda 2, Sub-City Bole
+            </span>
           </a>
         ),
       },
@@ -775,43 +771,37 @@ export const footer = [
       {
         list: (
           <a>
-            {" "}
-            <i>
-              <PhoneIphone />
-            </i>
-            <b>Mob: </b>  + 251 911239976/+ 251 911762127
+            <i><PhoneIphone /></i>
+            <span>
+              <b>Mob: </b>+ 251 911239976 / + 251 911762127
+            </span>
           </a>
         ),
       },
       {
         list: (
           <a>
-            <b>
-              <i>
-                <PhoneIphone />
-              </i>
-              Tel:
-            </b>
-            + 251 116151212
+            <i><PhoneIphone /></i>
+            <span>
+              <b>Tel: </b>+ 251 116151212
+            </span>
           </a>
         ),
       },
       {
         list: (
           <a>
-            <b>
-              <i>
-                <PhoneIphone />
-              </i>
-              Fax:
-            </b>
-            +251 116151221
+            <i><FaxOutlined /></i>
+            <span>
+              <b>Fax: </b>+251 116151221
+            </span>
           </a>
         ),
       },
     ],
   },
 ];
+
 
 
 export const testimonials = [

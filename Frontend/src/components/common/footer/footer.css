@@ -77,6 +77,43 @@ footer ul li {
   background-color: #000000b7;
   font-size: 12px;
 }
+
+
+footer.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fcontent {
+  margin: 2px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fcontent .box {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.box a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.box a span {
+  margin-left: 8px;
+}
+
+.box i {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 800px) {
   footer .container {
     grid-template-columns: repeat(2, 1fr);
@@ -104,3 +141,4 @@ footer ul li {
     border-radius: 5%;
 }
 }
+

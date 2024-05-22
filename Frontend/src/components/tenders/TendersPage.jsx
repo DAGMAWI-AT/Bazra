@@ -9,7 +9,7 @@ const TendersPage = () => {
       <div>
         <div className="flex justify-center bg-gray-500 bg-transparent shadow-md shadow-gray-700 mb-20 border border-gray-300 h-62 max-h-80 m-2">
           <img
-            src="../../../bz.png"
+            src="../../../bz2.png"
             width="100"
             height="100"
             alt=""
