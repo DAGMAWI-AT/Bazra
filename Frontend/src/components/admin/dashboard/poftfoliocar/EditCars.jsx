@@ -39,10 +39,9 @@ function EditCars() {
   const handleChangeSelectedValue = (event) => {
     const selectedValue = event.target.value;
     if (selectedValue === "other") {
-      // Handle the case when "Other" is selected
-      // For example, show an input field to allow the user to write a new category
-      setEditingCategory(true); // Add a state to track if user is editing the category
-      setSelectedCarCategory(""); // Clear the selected category
+      
+      setEditingCategory(true);
+      setSelectedCarCategory(""); 
     } else {
       setEditingCategory(false);
       setSelectedCarCategory(selectedValue);

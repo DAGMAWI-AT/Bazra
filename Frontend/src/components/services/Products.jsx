@@ -15,8 +15,7 @@ const Products = () => {
             <a href="/products">Products</a>
           </h2>
           <h4 className="products-subheader">
-          BAZRA provides the highest quality automotive and IT products and services. We collaborate with our international partners to maximize customer satisfaction with timely delivery at superior quality.
-          </h4>
+          BAZRA provides the highest quality automotive and IT products and services. We collaborate with our international partners to maximize customer satisfaction with timely delivery at superior quality.          </h4>
         </Reveal>
         <div className="products-container-wrapper">
           <div className="products-container">

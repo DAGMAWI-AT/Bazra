@@ -236,7 +236,7 @@ header img {
   position: relative;
   text-decoration: none;
   font-size: 22.5px;
-}
+  font-family: 'Open Sans', sans-serif;}
 
 .nav .active::before,
 .nav a::before {
@@ -353,7 +353,7 @@ color: #212222ab;
 
 
 
-/*---------header-------------*/
+/*--------- end header-------------*/
 
 
 

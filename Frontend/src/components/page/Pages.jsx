@@ -23,11 +23,10 @@ const Pages = () => {
 
 
   useEffect(()=>{
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   },[]);
 
   ReactGA.event({
-    
   })
   
   return (

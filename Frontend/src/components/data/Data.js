@@ -53,10 +53,10 @@ export const nav = [
     text: "News",
     path: "/blog",
   },
-  {
-    text: "Tender",
-    path: "/tenders",
-  },
+  // {
+  //   text: "Tender",
+  //   path: "/tenders",
+  // },
   {
     text: "Contact",
     path: "/contact",
@@ -76,16 +76,21 @@ export const home = [
     cover: process.env.PUBLIC_URL + "../hero/banner1.jpg",
   },
 
-  // {
-  //   text:<i>Lada-x-cross-5</i>,
-  //   title: "Bazra Motors",
-  //   cover:"../hero/lada-x-cross-5-1.jpg",
-  // },
+  {
+    text:<i>Urban Development</i>,
+    title: "Bazra Motors",
+    cover: process.env.PUBLIC_URL + "../hero/realstate.jpeg",
+  },
 
   {
     text: <i>max-vygoda-up</i>,
     title: "Bazra Motors",
     cover: process.env.PUBLIC_URL + "../hero/LastNews.jpg",
+  },
+  {
+    text:<i>Urban Development</i>,
+    title: "Bazra Motors",
+    cover: process.env.PUBLIC_URL + "../hero/reslstate1.jpeg",
   },
   {
     text: <i>Lada Niva car</i>,
@@ -152,11 +157,11 @@ export const about = [
          </p>
     ),
     cover: "../IMGlogo1.jpg",
-    title: "10 + years of exprince in the manifacturing industry",
+    title: "10 + years of exprince in the Manufacturing  industry",
     moreDesc:
-      "We; BAZRA INVESTMENT GROUP (BIG), are a group of companies doing business in areas of trading, Import-Export, construction, investment management, IT, motor engineering and urban development. BIG brings world class advice, know-how, technology and finance to Ethiopia through the use of local talent and via collaboration with international partners.BIG is working in partnership with world-renowned companies to assemble vehicles such as LADA, BAW and BAIC. BIG represent VW/FAW and KAMAZ in Ethiopia; plus, it als represents Belarus Tractors, Kirovets Tractors, VIM Tractors and attachments and KLEVER attachments, this has allowed BAZRA to provide the best automotive and agricultural machinery products and services at the highest standards with international certification making it a world-class company operating in the African continent.",
+      "We; BAZRA INVESTMENT GROUP, are a group of companies doing business in areas of trading, Import-Export, construction, investment management, IT, motor engineering and urban development. BIG brings world class advice, know-how, technology and finance to Ethiopia through the use of local talent and via collaboration with international partners. BAZRA is working in partnership with world-renowned companies to assemble vehicles such as LADA, BAW and BAIC. BAZRA represent VW/FAW and KAMAZ in Ethiopia; plus, it also represents Belarus Tractors, Kirovets Tractors, VIM Tractors and attachments, and KLEVER attachments, this has allowed BAZRA to provide the best automotive and agricultural machinery products and services at the highest standards with international certification making it a world-class company operating in the African continent.",
     bannerDesc:
-      "We; BAZRA INVESTMENT GROUP (BIG), are a group of companies doing business in areas of trading, Import-Export, construction, investment management, IT, motor engineering and urban development. BIG brings world class advice, know-how, technology and finance to Ethiopia through the use of local talent and via collaboration with international partners.BIG is working in partnership with world-renowned companies to assemble vehicles such as LADA, BAW and BAIC. BIG represent VW/FAW and KAMAZ in Ethiopia; plus, it als represents Belarus Tractors, Kirovets Tractors, VIM Tractors and attachments and KLEVER attachments, this has allowed BAZRA to provide the best automotive and agricultural machinery products and services at the highest standards with international certification making it a world-class company operating in the African continent.",
+      "We; BAZRA INVESTMENT GROUP, are a group of companies doing business in areas of trading, Import-Export, construction, investment management, IT, motor engineering and urban development. BIG brings world class advice, know-how, technology and finance to Ethiopia through the use of local talent and via collaboration with international partners. BAZRA is working in partnership with world-renowned companies to assemble vehicles such as LADA, BAW and BAIC. BAZRA represent VW/FAW and KAMAZ in Ethiopia; plus, it also represents Belarus Tractors, Kirovets Tractors, VIM Tractors and attachments, and KLEVER attachments, this has allowed BAZRA to provide the best automotive and agricultural machinery products and services at the highest standards with international certification making it a world-class company operating in the African continent.",
   },
 ];
 
@@ -164,21 +169,21 @@ export const overview = [
   {
     id: 1,
     title: "Exprience",
-    Desc: "Ethiopian-owned company with 10+ years of experience in car manufacturing service-oriented company",
+    Desc: "BAZRA is an Ethiopian owned company with 10+ years of experience in vehicle assembly, manufacturing and services. ",
     cover: "../icon1.png",
   },
   {
     id: 2,
     icon: <Settings />,
     title: "Founder",
-    Desc: "Founded by Dr. Yeyehyirad Asnake Bazra Investment Group, based in Addis Ababa, Ethiopia",
+    Desc: "The company has been found by industry specialists, technologists and professionals.",
     cover: "../icon2.png",
   },
   {
     id: 3,
     icon: <Settings />,
     title: "Service",
-    Desc: "Provide End to End Services to Meet Customer Requirements",
+    Desc: "Provide End to End Services in number of areas of specialization to meet customer requirements.",
     cover: "../icon3.png",
   },
 
@@ -200,7 +205,7 @@ export const overview = [
     id: 6,
     icon: <CropRotate />,
     title: "Leading Player",
-    Desc: "A Leading Player Manifacturing,IT Market with Many project completed",
+    Desc: "BAZRA is a Leading Player in Automotive Assembly and Manufacturing Market with Many other manufacturing projects completed and underway.",
     cover: "../icon6.png",
   },
 ];
@@ -426,7 +431,7 @@ export const contact = [
       <a>
         <MdLocalPhone />
         <a title="phone"
-          href="https://wa.me/251985187059?"
+          href="https://wa.me/+ 251 116151212?"
           target="_blank"
           rel="noopener noreferrer"
         ></a>
@@ -435,7 +440,7 @@ export const contact = [
     text: (
       <a>
         <a
-          href="https://wa.me/251985187059?"
+          href="https://wa.me/+251116151212?"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -662,11 +667,11 @@ export const footer = [
           <a>
             <i>
               <EmailOutlined />
-            </i>{" "}
+            </i>
             <a href="mailto:bazrainvestmentgroup@gmail.com/" target="_blank" rel="noreferrer">
-              {" "}
+              
               Email
-            </a>{" "}
+            </a>
           </a>
         ),
       },
@@ -806,11 +811,11 @@ export const footer = [
 
 export const testimonials = [
   {
-    prof: "Founder",
+    prof: "CORPORATE GOVERNANCE  ",
     cover: "../testimoni.png",
-    text: "good for all in bazra",
+    text: "BAZRA’s corporate governance philosophy will endeavour to exceed regulatory and legal requirements by adopting several voluntary practices aimed at a high level of business ethics, effective supervision, and enhancement of value for all stakeholders.",
     // address: "Addis Ababa",
-    name: "Dr. Yayehyirad Asnake,",
+    name: "",
     icon: [
       <a
         href="mailto:bazrainvestmentgroup@gmail.com"
@@ -832,10 +837,10 @@ export const testimonials = [
     ],
   },
   {
-    prof: "Finance Manager",
+    prof: "BAZRA TEAM",
     cover: "../testimoni.png",
-    text: "good for all in bazra",
-    name: "Mr. Getu B. ",
+    text: "BAZRA has an internationally skilled professional executive management team with a broad suite of professional expertise, experience and skills. ",
+    name: "",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
       <i class="fa-brands fa-linkedin"></i>,
@@ -847,7 +852,7 @@ export const testimonials = [
     prof: "Client",
     cover: "../testimoni.png",
     text: "good for all in bazra",
-    name: "Mr/DR/Ms",
+    name: "",
     icon: [
       <i class="fa-brands fa-facebook-f"></i>,
       <i class="fa-brands fa-linkedin"></i>,
@@ -855,44 +860,7 @@ export const testimonials = [
       <i class="fa-brands fa-instagram"></i>,
     ],
   },
-  // {
-  //   prof: "Softwar Engineer",
-  //   text: "contact bazra and good for all in bazra",
-  //   cover: "../testimoni.png",
-  //   // address: "Addis Ababa",
-  //   name: "Dagmawi",
-  //   icon: [
-  //     <i class="fa-brands fa-facebook-f"></i>,
-  //     <i class="fa-brands fa-linkedin"></i>,
-  //     <i class="fa-brands fa-twitter"></i>,
-  //     <i class="fa-brands fa-instagram"></i>,
-  //   ],
-  // },
-  {
-    prof: "Founder",
-    cover: "../testimoni.png",
-    text: "good for all in bazra",
-    name: "Dr. Yayehyirad Asnake,",
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
-  },
-  {
-    prof: "Manager",
-    cover: "../testimoni.png",
-    text: "good for all in bazra",
-    name: "Mr. Lealem. S",
-
-    icon: [
-      <i class="fa-brands fa-facebook-f"></i>,
-      <i class="fa-brands fa-linkedin"></i>,
-      <i class="fa-brands fa-twitter"></i>,
-      <i class="fa-brands fa-instagram"></i>,
-    ],
-  },
+  
 ];
 
 export const blog = [
@@ -997,7 +965,7 @@ export const serviceData = [
     title: "Manifucturing",
     imageUrl: "../../../manif.jpg",
     description:
-      "BAZRA has a motor engineering company dedicated to automotive assembly and manufacturing.  ",
+      "BAZRA has a motor engineering company dedicated to automotive assembly and manufacturing as well as biopharmaceuticals and pharmaceuticals manufacturing wing.",
     websiteLink: "/contactpage",
   },
   {
@@ -1018,7 +986,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/vichle part.jpg",
 
     description:
-      "BAZRA provides spare parts for the vehicles it assembles and represents.",
+      "BAZRA provides vehicles as well as spare parts for the vehicles it assembles and represents.",
     websiteLink: "/contactpage",
   },
   {
@@ -1029,7 +997,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/import-and-export.jpg",
 
     description:
-      "We; BAZRA, are a boutique business, trading, products sourcing, Import-Export company. BAZRA plays in commodities of all kind that are os crucial role in the development of economy. BAZRA is there in sourcing all kind of commodities from both Ethiopia to the world and from the any point in the glob to any other destination.  ",
+      "We; BAZRA, are a boutique business, trading, products sourcing, Import-Export company. BAZRA plays in commodities of all kind that are of crucial role in the development of economy. BAZRA is there in sourcing all kind of commodities from both Ethiopia to the world and from the any point in the glob to any other destination.",
     websiteLink: "/contactpage",
   },
   {
@@ -1040,7 +1008,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/Motor Engineering.jpg",
 
     description:
-      "BAZRA is one of Automotive Distributors and Manufacturers in Ethiopia, covering passenger cars and medium duty commercial vehicles and agricultural machineries. BAZRA MOTORS has an assembly facility in Kombolcha, 300kms away from Addis Ababa agreed to assemble LADA vehicles.",
+      "BAZRA is one of Automotive Assemblers and Distributors in Ethiopia, covering passenger cars and medium duty commercial vehicles and agricultural machineries. BAZRA MOTORS has an assembly facility in Kombolcha, 300kms away from Addis Ababa agreed to assemble vehicles.",
     websiteLink: "/contactpage",
   },
   {
@@ -1062,7 +1030,7 @@ export const serviceData = [
     imageUrl: "../../../serviceD/urban.png",
 
     description:
-      "BAZRA has an urban development wing working to develop cities in Ethiopia with the main focus in Arba-Minch, Bahir-Dar, Debre-Birhan, Dessie and Gonder. The urban development concepts are multiplied with the concepts of eco-SMART and TECHNOPOLIS concepts.",
+      "BAZRA has an urban development wing working to develop cities in Ethiopia with the main focus in Arba-Minch, Bahir-Dar, Debre-Birhan, Dessie and Gonder. The urban development concepts are multiplied with eco-SMART and TECHNOPOLIS concepts.",
     websiteLink: "/contactpage",
   },
   {
@@ -1074,6 +1042,17 @@ export const serviceData = [
 
     description:
       "BAZRA has developed a Logistics and Transport platform which is completely automated system that outperforms the industry's conventional management systems and enables businesses and truck owners to take full control of their assets, cargo and engage actively in the business. The platform provides market, tracing and tracking tools, transport administration and management.",
+    websiteLink: "/contactpage",
+  },
+  {
+    id: 8,
+    icon: <Settings />,
+
+    title: "Pharmaceuticals and Biopharmaceuticals",
+    imageUrl: "../../../serviceD/pharamaceutical.jpg",
+
+    description:
+      "BAZRA GROUP is partnering with scientists, scientific institutions and industry specialists to manufacture Blood Products, Enzymes, Hormones including Human Insulin, both Human and Animal Antibiotics and Vaccines.",
     websiteLink: "/contactpage",
   },
 ];
@@ -1110,7 +1089,7 @@ export const products = [
     link: "/products/aggregates",
     image: "../../../IT.png",
     description:
-      "BAZRA’s IT wing is working both on its own capacity and with partners in the world of IT BAZRA is partnering with such big names in the industry as ALT4, FORTECOM, KASPERSKY, SAP LEONARDO, GEOMIR, MPP LABS, SOFTLINE and SOFTCLUB.  BAZRA has developed its own logistics management and payment platforms.",
+      "BAZRA’s IT wing is working both on its own capacity and with international partners in the world of IT. BAZRA is partnering with such big names in the industry as ALT4, FORTECOM, GEOMIR, INFOWATCH, iPavlov, KASPERSKY, Kontur, MPP LABS, SAP LEONARDO, SODA – SYSTEMS INTEGRATION & DATA ANALYTICS, SOFTLINE SOFTCLUB, SOFTLOGIC, VOLTAH. BAZRA has developed its own logistics management and payment platforms.",
   },
   {
     title: "Manufacturing",
@@ -1124,7 +1103,7 @@ export const products = [
     link: "/products/aggregates",
     image: "../../../lada3.jpeg",
     description:
-      "BAZRA is one of Automotive Distributors and Manufacturers in Ethiopia, covering passenger cars and medium duty commercial vehicles and agricultural machineries. BAZRA MOTORS has an assembly facility in Kombolcha, 300kms away from Addis Ababa agreed to assemble LADA vehicles.",
+      "BAZRA is one of Automotive Distributors and Manufacturers in Ethiopia, covering passenger cars and medium duty commercial vehicles and agricultural machineries. BAZRA MOTORS has an assembly facility in Kombolcha, 300kms away from Addis Ababa agreed to assemble vehicles.",
   },
   {
     title: "Construction",
@@ -1132,7 +1111,7 @@ export const products = [
     image: "../../../lada.jpeg",
 
     description:
-      "BAZRA has a construction wing working in the steadily expanding construction sector; which is a grade I building company that works hard to advance the civil construction industry.",
+      "BAZRA has a construction wing working in the steadily expanding construction sector; which is a grade I construction company that works hard to advance the civil construction industry.",
   },
   {
     title: "Urban Development ",
@@ -1140,7 +1119,7 @@ export const products = [
     image: "../../../lada0.jpeg",
 
     description:
-      "BAZRA has an urban development wing working to develop cities in Ethiopia with the main focus in Arba-Minch, Bahir-Dar, Debre-Birhan, Dessie and Gonder. The urban development concepts are multiplied with the concepts of eco-SMART and TECHNOPOLIS concepts.",
+      "BAZRA has an urban development wing working to develop cities in Ethiopia with the main focus in Addis Ababa, Arba-Minch, Bahir-Dar, Debre-Birhan, Dessie and Gonder. The urban development concepts are multiplied with the concepts of eco-SMART and TECHNOPOLIS.",
   },
 
 
@@ -1192,9 +1171,9 @@ export const partner = [
       {
         "image_src": "../partnership/autoagri/klever.png"
       },
-      {
-        "image_src": "../partnership/autoagri/uaz.png"
-      },
+      // {
+      //   "image_src": "../partnership/autoagri/uaz.png"
+      // },
      
 
     ]

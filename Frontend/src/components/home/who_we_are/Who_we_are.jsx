@@ -39,7 +39,7 @@ const WhoWeAre = () => {
             best products and services at the highest standards with
             international certification making it a world-class company operating
             in the African continent. */}
-            BAZRA INVESTMENT GROUP functions across a range of businesses and industries so as to achieve business and economic excellence; meanwhile, BAZRA builds on the premise of mutual trust and respect.
+            BAZRA INVESTMENT GROUP (BIG) functions across a range of businesses and industries so as to achieve business and economic excellence; meanwhile, BAZRA builds on the premise of mutual trust and respect.
           </p>
 
           <button className="Btn" onClick={handleButtonClick}>

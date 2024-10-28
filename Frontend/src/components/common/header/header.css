@@ -30,7 +30,9 @@
     /* background-color: goldenrod; */
     display: block;
   }
-
+ header .nav{
+  font-family: 'Open Sans', sans-serif;
+ }
   header li a {
     display: inline-block;
     margin-bottom: 20px;

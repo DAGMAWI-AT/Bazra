@@ -20,7 +20,7 @@ const Servicepage = () => {
       <div className="service-containe">
         <h2 className="service-title">Our Services</h2>
         <p className="service-description">
-          At bazra motors, we are dedicated to providing cutting-edge solutions tailored to meet the unique needs of the car manifacturing sector. Our comprehensive range of services is designed to empower businesses and drive success in a rapidly evolving landscape.
+        At BAZRA, we are dedicated to providing cutting-edge solutions tailored to meet the unique needs of the automotive manufacturing sector. Our comprehensive range of services is designed to empower businesses and drive success in a rapidly evolving landscape.
         </p>
        
          <Link to="/contact" >          

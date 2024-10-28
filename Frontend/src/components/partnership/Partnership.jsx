@@ -31,16 +31,7 @@ const Partnership = () => {
             <div className="partner_content">
               <h1 className="text-white text-4xl font-bold mb-8">Partner</h1>
               <p className="text-white text-lg">
-                BAZRA INVESTMENT GROUP is dedicated to forging international and
-                local partnerships to develop, support and improve international
-                business, finance, knowledge and technology transfer in to
-                Ethiopia. In order to address Ethiopia's urgent needs in
-                international trade, finance, logistics, and knowledge and
-                technology transfer, BIG is also working to develop partnerships
-                in a variety of fields of international business and trade,
-                knowledge and technology transfer, research, and technical
-                exchange.
-              </p>
+              BAZRA INVESTMENT GROUP is dedicated to forging international and local partnerships to develop, support and improve international business, finance, knowledge and technology transfer in to Ethiopia. In order to address Ethiopia's urgent needs in international trade, finance, logistics, and knowledge and technology transfer, BAZRA is also working to develop partnerships in a variety of fields of international business and trade, knowledge and technology transfer, research, and technical exchange.              </p>
             </div>
           </div>
         </section>

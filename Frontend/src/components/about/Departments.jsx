@@ -7,31 +7,22 @@ const departmentsData = [
     id: '1',
     title: 'Marketing Department',
     image: '../../../m.jpg',
-    description: 'Our  Marketing Department is dedicated to promoting our products and services to a wider audience. We employ innovative strategies Our  Marketing Department is dedicated to promoting our products and services to a wider audience. We employ innovative strategies to create brand awareness and drive customer engagement Our  Marketing Department is dedicated to promoting our products and services to a wider audience. We employ innovative strategies to create brand awareness and drive customer engagement Our  Marketing Department is dedicated to promoting our products and services to a wider audience. We employ innovative strategies to create brand awareness and drive customer engagement to create brand awareness and drive customer engagement.',
+    description: 'Our Marketing Department is dedicated to promoting our products and services to a wider audience. We employ innovative strategies to create brand awareness, product knowledge and drive customer engagement.',
     services: ['Social Media Campaigns', 'Content Marketing', 'Market Research'],
   },
   {
     id: '2',
     title: 'IT Services Department',
     image: '../../../IT.png',
-    description: 'The IT Services Department ensures the smooth functioning of our digital infrastructure. We provide comprehensive IT solutions to support the organization\'s operations and security.',
+    description: 'The IT Services Department ensures the smooth functioning of our digital infrastructure. We provide comprehensive IT solutions to support the organizations operations and security.',
     services: ['Network Management', 'Software Development', 'Cybersecurity'],
   },
   {
     id: '3',
-    title: 'Agriculter Department',
-    image: '../../../agi.jpg',
-    description: 'What are the functions of agricultural marketing? i) Exchange functions; ii) Physical functions; and iii) Facilitative functions. Exchange functions are considered to be the most important of all the functions of agricultural marketing. These mainly include functions related to buying and selling..',
-
-    services: ['Social Media Campaigns', 'Content Marketing', 'Market Research'],
-  },
-
-  {
-    id: '4',
-    title: "Manifacturing Department",
+    title: "Manufacturing Department",
     image: '../../../manif.jpg',
-    description: 'Ethiopia To Manufacture Lada Cars For The African Market - Russia Briefing News Ethiopia will launch the production of Russian Lada cars on its territory for the African market, the countries Ambassador to Russia Cham',
-    services: ['Network Management', 'Software Development', 'Cybersecurity'],
+    description: 'The Manufacturing Department is working in areas of Automotive Assembly in Ethiopia.The department is also working to manufacture antibiotics (both human and animal), Enzymes, Blood Products, Hormones including Human Insulin; and Vaccines in collaboration and partnership with international scientific institutes and industries.',
+    services: ['', '', ''],
   }
   // Add more department data as needed
 ];

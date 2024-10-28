@@ -35,7 +35,7 @@ const Header = () => {
   const closeNavList = () => {
     setNavList(false);
   };
-
+  
   return (
     <header className={`header_area header_stick no_bg mobile_menu_enabled${navList ? ' nav-open' : ''}`}>
       <div className="container flexsb">

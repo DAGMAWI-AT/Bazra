@@ -41,7 +41,7 @@ const Tenders = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 mb-10 p-4">
-          <div className="bg-white border border-yellow-900 shadow-lg rounded p-4 bg-opacity-80 relative" onClick={handleDoubleClick}>
+          <div className="bg-white border border-yellow-900 shadow-lg rounded p-4 bg-opacity-80 relative" >
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
@@ -115,7 +115,7 @@ const Tenders = () => {
             </div>
           </div>
 
-          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" onClick={handleDoubleClick}>
+          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" >
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
@@ -190,7 +190,7 @@ const Tenders = () => {
               </a>
             </div>
           </div>
-          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" onClick={handleDoubleClick}>
+          <div className="bg-white border border-green-400 shadow-sm rounded p-4 relative" >
             <div className="absolute left-4 top-0 transform -translate-y-1/2 flex items-center pl-1 text-sm bg-green-400 text-white rounded">
               Free
             </div>
